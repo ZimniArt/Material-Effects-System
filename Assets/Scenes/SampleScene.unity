@@ -5359,6 +5359,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fantasy_character
       objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.97444034
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.13912852
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.08241147
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.1559415
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.208
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 12.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 6833311126390149132, guid: c2722b9afab255942a57338bfcca0903,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 19.704
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
