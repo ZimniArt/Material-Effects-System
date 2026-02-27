@@ -127,9 +127,9 @@ Material:
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distortion_power: 0
-    - _Distortion_scale: 3.97
-    - _Distortion_speed: 0.58
+    - _Distortion_power: 1.5
+    - _Distortion_scale: 1
+    - _Distortion_speed: 1.93
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _ENUM: 1
@@ -165,10 +165,13 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 0.92855203, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Distortion_Speed_3: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _Distortion_speed_3: {r: 0.1, g: 0.11, b: 0, a: 0}
+    - _Distortion_speed_4: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
-    - _Offset: {r: 1, g: 1, b: 1, a: 0}
+    - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
