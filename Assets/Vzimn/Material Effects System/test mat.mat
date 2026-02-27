@@ -125,10 +125,12 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DIstorion_power: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distortion_power: 1.5
-    - _Distortion_scale: 1
+    - _Distortio_speed: 0
+    - _Distortion_power: 0.03
+    - _Distortion_scale: 10.31
     - _Distortion_speed: 1.93
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -160,12 +162,14 @@ Material:
     - _Triplnar_sharpness: 0.69
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _wave_power: 0
     m_Colors:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 0.92855203, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Distortion_Speed_3: {r: 0.5, g: 0.5, b: 0.5, a: 0}
+    - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
+    - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_speed_3: {r: 0.1, g: 0.11, b: 0, a: 0}
     - _Distortion_speed_4: {r: 0, g: 0, b: 0, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
@@ -177,6 +181,7 @@ Material:
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
+    - _Wave_Speed: {r: 1, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
