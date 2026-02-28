@@ -13,7 +13,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _PROJECTION_MODE_UV
+  - _PROJECTION_MODE_TRIPLANAR_WORLD
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 2800000, guid: 591e12112a021964ab4c80c0dfe9cf44, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -147,7 +147,7 @@ Material:
     - _Metallic: 0
     - _MovingPosition: 0
     - _OcclusionStrength: 1
-    - _PROJECTION_MODE: 0
+    - _PROJECTION_MODE: 2
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -181,18 +181,18 @@ Material:
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
-    - _Offset: {r: 1, g: 1, b: 0, a: 0}
+    - _Offset: {r: 6.15, g: 1.91, b: 1.83, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 0.5, g: 0, b: 0, a: 0}
     - _Sqeeze_position: {r: 0, g: 0, b: 1, a: 0}
-    - _Squizzing_Amount: {r: 0, g: 1, b: 0, a: 0}
-    - _Squizzing_speed: {r: 1, g: 1, b: 0, a: 0}
-    - _Tiling: {r: 1, g: 1, b: 1, a: 0}
+    - _Squizzing_Amount: {r: 0, g: 0, b: 0, a: 0}
+    - _Squizzing_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _Tiling: {r: 1.02, g: 0.8, b: 0.8, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
-    - _Wave_Speed: {r: 1, g: 1, b: 0, a: 0}
+    - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
