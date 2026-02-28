@@ -145,7 +145,7 @@ Material:
     - _IS_TRIPLANAR: 0
     - _IS_UNLIT: 0
     - _Metallic: 0
-    - _MovingPosition: 1
+    - _MovingPosition: 0
     - _OcclusionStrength: 1
     - _PROJECTION_MODE: 2
     - _Parallax: 0.005
@@ -186,14 +186,15 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 0.5, g: 0, b: 0, a: 0}
     - _Sqeeze_position: {r: 0, g: 0, b: 1, a: 0}
-    - _Squizzing_Amount: {r: 1, g: 0, b: 0, a: 0}
-    - _Squizzing_speed: {r: 1, g: 1, b: 1, a: 0}
+    - _Squizzing_Amount: {r: 0, g: 0, b: 0, a: 0}
+    - _Squizzing_speed: {r: 1, g: 1.62, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Wave_Speed: {r: 1, g: 1, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
+    - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
