@@ -13,7 +13,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _PROJECTION_MODE_UV
+  - _PROJECTION_MODE_TRIPLANAR_WORLD
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: d8098ce6343fbad419af703db26265f0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -117,6 +117,7 @@ Material:
     m_Floats:
     - _AlphaClip: 0
     - _AlphaToMask: 0
+    - _Animated: 1
     - _BaseMap_influence: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
@@ -130,7 +131,7 @@ Material:
     - _DetailNormalMapScale: 1
     - _Distortio_speed: 0
     - _Distortion_power: 0.03
-    - _Distortion_scale: 10.31
+    - _Distortion_scale: 1
     - _Distortion_speed: 1.93
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -144,8 +145,9 @@ Material:
     - _IS_TRIPLANAR: 0
     - _IS_UNLIT: 0
     - _Metallic: 0
+    - _MovingPosition: 1
     - _OcclusionStrength: 1
-    - _PROJECTION_MODE: 0
+    - _PROJECTION_MODE: 2
     - _Parallax: 0.005
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -166,7 +168,7 @@ Material:
     - _wave_power: 0
     m_Colors:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
-    - _Amount: {r: 1, g: 1, b: 1, a: 0}
+    - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 0.92855203, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
@@ -182,12 +184,15 @@ Material:
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Speed: {r: 5, g: 1, b: 0, a: 0}
+    - _Speed: {r: 0.5, g: 0, b: 0, a: 0}
+    - _Sqeeze_position: {r: 0, g: 0, b: 1, a: 0}
+    - _Squizzing_Amount: {r: 1, g: 0, b: 0, a: 0}
+    - _Squizzing_speed: {r: 1, g: 1, b: 1, a: 0}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
-    - _Vector3: {r: 1, g: 1, b: 1, a: 0}
-    - _Wave_Speed: {r: 1, g: 0, b: 0, a: 0}
+    - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
+    - _Wave_Speed: {r: 1, g: 1, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 0, g: 0, b: 0, a: 0}
