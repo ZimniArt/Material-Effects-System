@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6c96898da3dff264a85d0ed99b200044, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -137,7 +137,7 @@ Material:
     - _DstBlendAlpha: 0
     - _ENUM: 1
     - _EnvironmentReflections: 1
-    - _Float: 0
+    - _Float: 4.93
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -192,6 +192,7 @@ Material:
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
+    - _Vector4: {r: 0.52, g: 0.4, b: 0.4, a: 0.6}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
