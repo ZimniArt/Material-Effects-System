@@ -28,9 +28,6 @@
             "m_Id": "e29f1cf8bf404c6da7ee76aea8357647"
         },
         {
-            "m_Id": "940730f9f83c477392a82bba6dcfb49d"
-        },
-        {
             "m_Id": "ae48eed6270b48b1b785e30557b6e7bc"
         },
         {
@@ -212,10 +209,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -316.0,
-            "y": -933.0000610351563,
-            "width": 207.99996948242188,
-            "height": 314.00006103515627
+            "x": -180.99998474121095,
+            "y": -923.9999389648438,
+            "width": 207.99998474121095,
+            "height": 313.99993896484377
         }
     },
     "m_Slots": [
@@ -299,29 +296,6 @@
 
 {
     "m_SGVersion": 0,
-    "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
-    "m_ObjectId": "58cfaaab62b7460e8399e8317515637a",
-    "m_Id": 0,
-    "m_DisplayName": "Out",
-    "m_SlotType": 1,
-    "m_Hidden": false,
-    "m_ShaderOutputName": "Out",
-    "m_StageCapability": 3,
-    "m_Value": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0
-    },
-    "m_Labels": []
-}
-
-{
-    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.DynamicVectorMaterialSlot",
     "m_ObjectId": "6693eb203e294cea88edaa518cbe7a42",
     "m_Id": 1,
@@ -342,42 +316,6 @@
         "z": 0.0,
         "w": 0.0
     }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.ViewDirectionNode",
-    "m_ObjectId": "940730f9f83c477392a82bba6dcfb49d",
-    "m_Group": {
-        "m_Id": ""
-    },
-    "m_Name": "View Direction",
-    "m_DrawState": {
-        "m_Expanded": false,
-        "m_Position": {
-            "serializedVersion": "2",
-            "x": 320.9999694824219,
-            "y": -1181.0,
-            "width": 208.00003051757813,
-            "height": 281.0
-        }
-    },
-    "m_Slots": [
-        {
-            "m_Id": "58cfaaab62b7460e8399e8317515637a"
-        }
-    ],
-    "synonyms": [
-        "eye direction"
-    ],
-    "m_Precision": 0,
-    "m_PreviewExpanded": true,
-    "m_DismissedVersion": 0,
-    "m_PreviewMode": 2,
-    "m_CustomColors": {
-        "m_SerializableColors": []
-    },
-    "m_Space": 1
 }
 
 {
@@ -511,10 +449,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -197.0,
-            "y": -1317.0,
-            "width": 207.99998474121095,
-            "height": 311.99993896484377
+            "x": -199.0,
+            "y": -1236.0,
+            "width": 208.0,
+            "height": 312.00006103515627
         }
     },
     "m_Slots": [
