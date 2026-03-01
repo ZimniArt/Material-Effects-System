@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 2800000, guid: 6c96898da3dff264a85d0ed99b200044, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -59,6 +59,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Emission_Map:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Gradient_Map:
+        m_Texture: {fileID: 2800000, guid: a62b54eb240d57b4eb20a2dfc7c04459, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Height_Map:
@@ -137,7 +141,7 @@ Material:
     - _DstBlendAlpha: 0
     - _ENUM: 1
     - _EnvironmentReflections: 1
-    - _Float: 4.93
+    - _Float: 1.67
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
@@ -149,6 +153,7 @@ Material:
     - _OcclusionStrength: 1
     - _PROJECTION_MODE: 0
     - _Parallax: 0.005
+    - _Position: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -170,7 +175,7 @@ Material:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Base_color: {r: 1, g: 0.92855203, b: 0, a: 0}
+    - _Base_color: {r: 0, g: 1, b: 0.0017437935, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
@@ -192,7 +197,7 @@ Material:
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
-    - _Vector4: {r: 0.52, g: 0.4, b: 0.4, a: 0.6}
+    - _Vector4: {r: 0.3, g: 0.4, b: 0.6, a: 0.7}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
