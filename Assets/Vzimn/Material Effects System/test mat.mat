@@ -13,7 +13,7 @@ Material:
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _PROJECTION_MODE_UV
+  - _PROJECTION_MODE_TRIPLANAR_LOCAL
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -53,6 +53,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Distortvoronoi_390eb9a4d62b4ccc96cc3afacf5ec2a4_Noise_4286001455_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _EmissionMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -79,6 +83,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Metallic_Map:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise_map:
+        m_Texture: {fileID: 2800000, guid: 48a5b3e7d20364342a1cf57d95bf5859, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Map:
@@ -132,12 +140,12 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DIstorion_power: 0
+    - _DIstorion_power: 4.53
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distortio_speed: 0
+    - _Distortio_speed: 0.1
     - _Distortion_power: 0.03
-    - _Distortion_scale: 0
+    - _Distortion_scale: 0.54
     - _Distortion_speed: 1.93
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -155,7 +163,7 @@ Material:
     - _Metallic: 0
     - _MovingPosition: 0
     - _OcclusionStrength: 1
-    - _PROJECTION_MODE: 0
+    - _PROJECTION_MODE: 3
     - _Parallax: 0.005
     - _PingPong: 1
     - _Position: 0

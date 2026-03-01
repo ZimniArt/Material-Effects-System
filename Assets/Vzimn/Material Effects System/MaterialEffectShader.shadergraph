@@ -1905,7 +1905,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Distort_voronoi",
+    "m_Name": "Distort_Noise",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
@@ -1921,6 +1921,9 @@
             "m_Id": "5947967d04164bd2b62f1827b10d8f45"
         },
         {
+            "m_Id": "c5842cb849da424abbf44b3106c78a61"
+        },
+        {
             "m_Id": "d141b6feb59d4435b966295637638746"
         },
         {
@@ -1928,9 +1931,6 @@
         },
         {
             "m_Id": "a74dc11d8889447eaf3187018e1c362e"
-        },
-        {
-            "m_Id": "c5842cb849da424abbf44b3106c78a61"
         },
         {
             "m_Id": "af82dd0def794002bcd58cebd979aba3"
@@ -2106,10 +2106,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -5100.0,
+            "x": -5099.0,
             "y": -2080.0,
             "width": 235.0,
-            "height": 326.9998779296875
+            "height": 327.0001220703125
         }
     },
     "m_Slots": [
@@ -4350,10 +4350,10 @@
     "m_Type": "UnityEditor.ShaderGraph.Texture2DInputMaterialSlot",
     "m_ObjectId": "c5842cb849da424abbf44b3106c78a61",
     "m_Id": -8965841,
-    "m_DisplayName": "Noise",
+    "m_DisplayName": "Noise_map",
     "m_SlotType": 0,
     "m_Hidden": false,
-    "m_ShaderOutputName": "_Noise",
+    "m_ShaderOutputName": "_Noise_map",
     "m_StageCapability": 2,
     "m_BareResource": false,
     "m_Texture": {
@@ -4510,7 +4510,7 @@
     "m_SlotType": 0,
     "m_Hidden": false,
     "m_ShaderOutputName": "_distortion_scale",
-    "m_StageCapability": 3,
+    "m_StageCapability": 2,
     "m_Value": 8.449999809265137,
     "m_DefaultValue": 0.0,
     "m_Labels": []
