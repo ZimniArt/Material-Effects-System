@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -63,7 +63,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Gradient_Map:
         m_Texture: {fileID: 2800000, guid: a62b54eb240d57b4eb20a2dfc7c04459, type: 3}
-        m_Scale: {x: 1, y: 1}
+        m_Scale: {x: 0.21, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Height_Map:
         m_Texture: {fileID: 0}
@@ -119,6 +119,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Add: 0
+    - _Add_Multiply: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Animated: 1
@@ -142,24 +144,28 @@ Material:
     - _ENUM: 1
     - _EnvironmentReflections: 1
     - _Float: 1.67
+    - _GRADIENT: 0
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _IS_LIT: 0
     - _IS_TRIPLANAR: 0
     - _IS_UNLIT: 0
+    - _Lighten: 0
     - _Metallic: 0
     - _MovingPosition: 0
     - _OcclusionStrength: 1
     - _PROJECTION_MODE: 0
     - _Parallax: 0.005
-    - _Position: 1
+    - _PingPong: 1
+    - _Position: 0
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
+    - _Speed: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
@@ -175,7 +181,7 @@ Material:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Base_color: {r: 0, g: 1, b: 0.0017437935, a: 1}
+    - _Base_color: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}

@@ -818,8 +818,8 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": -1229.9998779296875,
-            "y": -2807.0
+            "x": -1183.0,
+            "y": -2771.0
         },
         "m_Blocks": [
             {
@@ -835,8 +835,8 @@
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": -1279.9998779296875,
-            "y": -2523.0
+            "x": -1183.0,
+            "y": -2545.0
         },
         "m_Blocks": [
             {
@@ -3309,7 +3309,7 @@
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
     "m_Value": {
-        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"153f51d05b0003b4bace16b099759965\",\"type\":3}}",
+        "m_SerializedTexture": "{\"texture\":{\"fileID\":2800000,\"guid\":\"a62b54eb240d57b4eb20a2dfc7c04459\",\"type\":3}}",
         "m_Guid": ""
     },
     "isMainTexture": false,
@@ -3630,7 +3630,7 @@
     },
     "m_Name": "Color_Gradient",
     "m_DrawState": {
-        "m_Expanded": true,
+        "m_Expanded": false,
         "m_Position": {
             "serializedVersion": "2",
             "x": -1857.0001220703125,
@@ -3661,7 +3661,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
