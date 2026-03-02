@@ -25,7 +25,7 @@ Material:
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties: _Distortion_scale
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -58,7 +58,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Detail_Noise_map:
-        m_Texture: {fileID: 2800000, guid: 48a5b3e7d20364342a1cf57d95bf5859, type: 3}
+        m_Texture: {fileID: 2800000, guid: d3ba83ee10599814d8da77d27be7a65d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DistortNoise_390eb9a4d62b4ccc96cc3afacf5ec2a4_DetailNoisemap_2591475637_Texture2D:
@@ -152,12 +152,12 @@ Material:
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DIstorion_power: 1
+    - _DIstorion_power: 0
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Distortio_speed: 0
+    - _Distortio_speed: 0.1
     - _Distortion_power: 0.03
-    - _Distortion_scale: 0.2
+    - _Distortion_scale: 1
     - _Distortion_speed: 1.93
     - _DstBlend: 0
     - _DstBlendAlpha: 0
@@ -212,7 +212,7 @@ Material:
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
-    - _Noise_maps_influence: {r: 1.05, g: 0, b: 0, a: 0}
+    - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
     - _Offset: {r: 0.17, g: 0, b: 0, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
@@ -228,7 +228,7 @@ Material:
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
-    - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _texture_scroll_speed: {r: 0, g: 0, b: 0.01, a: 0}
     - _wave_scale: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5313333404574686791
