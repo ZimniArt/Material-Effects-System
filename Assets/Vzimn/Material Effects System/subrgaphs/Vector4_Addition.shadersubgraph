@@ -17,9 +17,6 @@
         },
         {
             "m_Id": "b99b0df9707443dfa04d378ea7b44527"
-        },
-        {
-            "m_Id": "9426e33d280a4703b3677464cdbad17a"
         }
     ],
     "m_Keywords": [],
@@ -454,9 +451,6 @@
         },
         {
             "m_Id": "2eda327694be4823b656becd38d9b66e"
-        },
-        {
-            "m_Id": "9426e33d280a4703b3677464cdbad17a"
         }
     ]
 }
@@ -885,34 +879,6 @@
         "w": 0.0
     },
     "m_DefaultValue": {
-        "x": 0.0,
-        "y": 0.0,
-        "z": 0.0,
-        "w": 0.0
-    }
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector4ShaderProperty",
-    "m_ObjectId": "9426e33d280a4703b3677464cdbad17a",
-    "m_Guid": {
-        "m_GuidSerialized": "035746c6-67a0-4cad-acba-370c28751a20"
-    },
-    "m_Name": "Vector4 (4)",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "Vector4 (4)",
-    "m_DefaultReferenceName": "_Vector4_4",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": {
         "x": 0.0,
         "y": 0.0,
         "z": 0.0,
