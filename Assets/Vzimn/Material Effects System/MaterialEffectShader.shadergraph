@@ -2632,10 +2632,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2049.000244140625,
-            "y": -1817.0001220703125,
+            "x": -2058.0,
+            "y": -1666.0,
             "width": 208.0,
-            "height": 278.0001220703125
+            "height": 277.9998779296875
         }
     },
     "m_Slots": [
@@ -5133,8 +5133,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2537.000244140625,
-            "y": -1968.0001220703125,
+            "x": -2566.0,
+            "y": -1943.0,
             "width": 208.0,
             "height": 302.0
         }
@@ -5687,9 +5687,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1730.0,
-            "y": -1816.0001220703125,
-            "width": 55.9998779296875,
+            "x": -1753.0,
+            "y": -1641.0,
+            "width": 56.0,
             "height": 24.0
         }
     },
@@ -6006,10 +6006,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -3034.0,
-            "y": -1815.0,
+            "x": -3072.0,
+            "y": -1857.0,
             "width": 139.0,
-            "height": 34.0
+            "height": 34.0001220703125
         }
     },
     "m_Slots": [
@@ -7001,10 +7001,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2320.000244140625,
-            "y": -1816.0001220703125,
+            "x": -2309.0,
+            "y": -1665.9998779296875,
             "width": 208.0,
-            "height": 302.0001220703125
+            "height": 301.9998779296875
         }
     },
     "m_Slots": [
@@ -7906,8 +7906,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -2860.0,
-            "y": -1702.0,
+            "x": -2914.0,
+            "y": -1666.0,
             "width": 208.0,
             "height": 433.0
         }
