@@ -114,6 +114,9 @@
             "m_Id": "b0fecac129d440e28d9080acdd5df0ff"
         },
         {
+            "m_Id": "4bbf13bde98d425ab27219cfb59cdcb5"
+        },
+        {
             "m_Id": "4700f720cd01494f8f82ea49f364fee2"
         },
         {
@@ -3256,6 +3259,18 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "4bbf13bde98d425ab27219cfb59cdcb5",
+    "m_Name": "Has Texture distortion",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "a08c19cee96b4e6b9e76858514378f83"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.KeywordNode",
     "m_ObjectId": "4d211bb90a85414897893369ff364bdd",
     "m_Group": {
@@ -3538,9 +3553,6 @@
         },
         {
             "m_Id": "7a3f15fe7634489d8ce42f00ff747286"
-        },
-        {
-            "m_Id": "a08c19cee96b4e6b9e76858514378f83"
         }
     ]
 }
