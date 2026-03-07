@@ -17,6 +17,7 @@ Material:
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
+  - _GRADIENT
   - _PROJECTION_MODE_TRIPLANAR
   - _PROJECTION_MODE_UV_VIEW
   - _SAMPLING_MODE_PLANE
@@ -146,7 +147,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Add: 0
-    - _Add_Multiply: 0
+    - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Animated: 1
@@ -154,6 +155,7 @@ Material:
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
+    - _COLOR_OVER_TIME: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
@@ -170,10 +172,11 @@ Material:
     - _ENUM: 1
     - _EnvironmentReflections: 1
     - _Float: 0.05
-    - _GRADIENT: 0
+    - _GRADIENT: 1
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
+    - _HAS_TEXTURE_DISTROTION: 0
     - _IS_LIT: 0
     - _IS_TRIPLANAR: 0
     - _IS_UNLIT: 0
@@ -191,11 +194,12 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _SAMPLING_MODE: 0
-    - _Screen_projection: 1
+    - _Screen_projection: 0
+    - _Screen_projection_UV: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.1
+    - _Speed: 2.15
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
@@ -209,13 +213,15 @@ Material:
     - _Vav: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _flat_world_position: 1
     - _projection: 0
+    - _triplanar_is_worldSpace: 0
     - _wave_power: 0
     - _world_local: 1
-    - _world_position: 0
+    - _world_position: 1
     m_Colors:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
-    - _Active_PLANE_XYZ: {r: 0.65, g: 0.91, b: 1, a: 0}
+    - _Active_PLANE_XYZ: {r: 0, g: 1, b: 0, a: 0}
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 1, b: 1, a: 1}
@@ -240,6 +246,8 @@ Material:
     - _Squizzing_Amount: {r: 0, g: 0, b: 0, a: 0}
     - _Squizzing_speed: {r: 0, g: 0, b: 0, a: 0}
     - _Tiling: {r: 1, g: 1, b: 1, a: 0}
+    - _Type_of_Projection: {r: 1, g: 0.85, b: 0, a: 0}
+    - _UV_screen_projection_0: {r: 1, g: 0, b: 0, a: 0}
     - _Vector2: {r: 0, g: 0, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
