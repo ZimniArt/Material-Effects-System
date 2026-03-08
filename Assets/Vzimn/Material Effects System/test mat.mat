@@ -41,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Base_map:
-        m_Texture: {fileID: 2800000, guid: 6c96898da3dff264a85d0ed99b200044, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -150,7 +150,7 @@ Material:
     - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amount: 0.067
+    - _Amount: 0.036
     - _Animated: 1
     - _BaseMap_influence: 1
     - _Blend: 0
@@ -171,9 +171,9 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _ENUM: 1
-    - _Edge_move_amount: 0.038
-    - _Edge_move_speed: 1
-    - _Edge_size: 0.135
+    - _Edge_move_amount: 0.107
+    - _Edge_move_speed: 0.2
+    - _Edge_size: 0.477
     - _EnvironmentReflections: 1
     - _Float: -0.17
     - _GRADIENT: 1
@@ -219,7 +219,7 @@ Material:
     - _ZWrite: 1
     - _flat_world_position: 1
     - _projection: 0
-    - _smoothnes: 0.077
+    - _smoothnes: 0.067
     - _triplanar_is_worldSpace: 0
     - _wave_power: 0
     - _world_local: 1
@@ -236,7 +236,7 @@ Material:
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
     - _Distortion_speed_3: {r: 0.1, g: 0.11, b: 0, a: 0}
     - _Distortion_speed_4: {r: 0, g: 0, b: 0, a: 0}
-    - _Edge_color: {r: 4, g: 3.7741303, b: 0.24528313, a: 0}
+    - _Edge_color: {r: 1, g: 0.8741453, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
