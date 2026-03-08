@@ -221,11 +221,12 @@ Material:
     - _Vav: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _amount: 1
+    - _amount: 0.867
     - _flat_world_position: 1
     - _position: 1
     - _power: -3.6
     - _projection: 0
+    - _sharpness: 1
     - _smoothnes: 0.067
     - _triplanar_is_worldSpace: 1
     - _wave_power: 0
@@ -237,7 +238,7 @@ Material:
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0, g: 1, b: 0.23365802, a: 1}
+    - _Color: {r: 1, g: 0, b: 0.06850052, a: 1}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
