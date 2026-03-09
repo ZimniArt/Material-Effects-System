@@ -182,7 +182,7 @@ Material:
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _Distortio_speed: 0
-    - _Distortion_amount: 0.75
+    - _Distortion_amount: 1
     - _Distortion_power: 0.03
     - _Distortion_scale: 0.3
     - _Distortion_speed: 1.93
@@ -243,7 +243,7 @@ Material:
     - _position: 1
     - _power: -3.6
     - _projection: 0
-    - _sharpness: 0.31
+    - _sharpness: 0.06
     - _smoothnes: 0.067
     - _triplanar_is_worldSpace: 1
     - _wave_power: 0
@@ -255,7 +255,7 @@ Material:
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 0.509434, g: 0.42042577, b: 0.24750799, a: 0.972549}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 0, g: 1, b: 0.6627457, a: 1}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
