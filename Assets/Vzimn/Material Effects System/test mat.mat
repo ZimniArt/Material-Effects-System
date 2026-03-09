@@ -171,7 +171,7 @@ Material:
     - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amount: 3.73
+    - _Amount: 0.11
     - _Animated: 1
     - _BaseMap_influence: 1
     - _Blend: 0
@@ -180,12 +180,15 @@ Material:
     - _COLOR_OVER_TIME: 0
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _Contrast: 0.7
     - _Cull: 2
     - _Cutoff: 0.5
     - _DIstorion_power: 0.1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Disolve_map_scale: 16.31
+    - _Directional_dissolve: 1
+    - _Disolve_map_scale: 7.13
+    - _Disolve_postion: 1.17
     - _Distortio_speed: 0
     - _Distortion_amount: 0
     - _Distortion_power: 0.03
@@ -195,9 +198,9 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _ENUM: 1
-    - _Edge_move_amount: 0.107
-    - _Edge_move_speed: 0.2
-    - _Edge_size: 0.21
+    - _Edge_move_amount: 0.6
+    - _Edge_move_speed: 1
+    - _Edge_size: 0.56
     - _EnvironmentReflections: 1
     - _Float: -0.17
     - _GRADIENT: 1
@@ -261,7 +264,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Direction: {r: 0, g: 0.01, b: 0, a: 0}
+    - _Direction: {r: 0, g: 1, b: 0, a: 0}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
@@ -269,12 +272,14 @@ Material:
     - _Distortion_speed_4: {r: 0, g: 0, b: 0, a: 0}
     - _Distrotion_scale: {r: 8, g: 8, b: 0, a: 0}
     - _Distrotion_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _Edge_color: {r: 1, g: 0.8741453, b: 0, a: 1}
+    - _Edge_color: {r: 0, g: 0.9373245, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
+    - _Noise_move_speed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _Object_world_view_0: {r: 0, g: 0, b: 1, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _PLANE_XYZ: {r: 0, g: 1, b: 0, a: 0}
     - _Position: {r: 1.32, g: 1, b: 0, a: 0}
