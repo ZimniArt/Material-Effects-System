@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: test mat
-  m_Shader: {fileID: -6465566751694194690, guid: 9ceecd208948b654f9ee59338953fc16,
+  m_Name: test mat 2
+  m_Shader: {fileID: -6465566751694194690, guid: 04b759d798399304983601317fb2b9e1,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -74,6 +74,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _Distortion_Map:
         m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Distortion_mask:
+        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Distortvoronoi_390eb9a4d62b4ccc96cc3afacf5ec2a4_Noise_4286001455_Texture2D:
@@ -144,12 +148,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: 716300c171d559c4ab5278a51852b298, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a810af2ba14844bf86f82a498c9e6f60_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2D:
         m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture2D_reg:
+        m_Texture: {fileID: 2800000, guid: d8098ce6343fbad419af703db26265f0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Triplanar_6511f25fc4464477a6fda718d10972de_Texture_1_Texture2D:
@@ -186,6 +198,7 @@ Material:
     - _Contrast: 3.2
     - _Cull: 2
     - _Cutoff: 0.5
+    - _DIstance: 0.1
     - _DIstorion_power: 0.1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -251,12 +264,14 @@ Material:
     - _ZWrite: 1
     - _amount: 0
     - _flat_world_position: 1
+    - _float: -0.65
     - _position: 1
     - _power: -3.6
     - _projection: 0
     - _sharpness: 0
     - _smoothnes: 0.16
     - _triplanar_is_worldSpace: 1
+    - _v3: 0
     - _wave_power: 0
     - _world_local: 1
     - _world_position: 1
@@ -290,7 +305,7 @@ Material:
     - _Projection_plane_XYZ: {r: 0.9, g: 0.73, b: 1, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Speed: {r: 0.5, g: 0, b: 0, a: 0}
+    - _Speed: {r: 5, g: 0, b: 0, a: 0}
     - _Sqeeze_position: {r: 0, g: 0, b: 1, a: 0}
     - _Squizzing_Amount: {r: 0, g: 0, b: 0, a: 0}
     - _Squizzing_speed: {r: 0, g: 0, b: 0, a: 0}
@@ -302,8 +317,10 @@ Material:
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _float: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
+    - _speed: {r: 0, g: 0.1, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 2.06, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
