@@ -12,7 +12,8 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _HAS_TEXTURE_DISTROTION
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -192,7 +193,7 @@ Material:
     - _Directional_dissolve: 0
     - _Disolve_map_scale: 2.57
     - _Disolve_postion: 1.34
-    - _Distortio_speed: 0
+    - _Distortio_speed: 0.25
     - _Distortion_amount: 0
     - _Distortion_power: 0.03
     - _Distortion_scale: 0.3
@@ -211,7 +212,7 @@ Material:
     - _Glossiness: 0
     - _GlossyReflections: 0
     - _HAS_DISOLVE: 0
-    - _HAS_TEXTURE_DISTROTION: 0
+    - _HAS_TEXTURE_DISTROTION: 1
     - _IS_LIT: 0
     - _IS_TRIPLANAR: 0
     - _IS_UNLIT: 0
@@ -281,13 +282,13 @@ Material:
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
-    - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
+    - _Noise_maps_influence: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
     - _Object_world_view_0: {r: 0, g: 0, b: 1, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _PLANE_XYZ: {r: 0, g: 1, b: 0, a: 0}
     - _Position: {r: 1.32, g: 1, b: 0, a: 0}
-    - _Projection_plane_XYZ: {r: 0.9, g: 0.73, b: 1, a: 0}
+    - _Projection_plane_XYZ: {r: 1, g: 0, b: 1, a: 0}
     - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 0.5, g: 0, b: 0, a: 0}
@@ -305,7 +306,7 @@ Material:
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _wave_scale: {r: 2.06, g: 0, b: 0, a: 0}
+    - _wave_scale: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5313333404574686791
 MonoBehaviour:

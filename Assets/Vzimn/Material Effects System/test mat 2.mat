@@ -116,12 +116,16 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Noise_map:
         m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Noise_texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Normal_Map:
@@ -186,7 +190,7 @@ Material:
     - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Amount: 0
+    - _Amount: 0.19
     - _Animated: 1
     - _BaseMap_influence: 1
     - _Blend: 0
@@ -262,9 +266,9 @@ Material:
     - _Vav: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
-    - _amount: 0
+    - _amount: 0.59
     - _flat_world_position: 1
-    - _float: -0.65
+    - _float: -0.33
     - _position: 1
     - _power: -3.6
     - _projection: 0
@@ -298,12 +302,14 @@ Material:
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _Noise_tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Object_world_view_0: {r: 0, g: 0, b: 1, a: 0}
     - _Offset: {r: 0, g: 0, b: 0, a: 0}
     - _PLANE_XYZ: {r: 0, g: 1, b: 0, a: 0}
     - _Position: {r: 1.32, g: 1, b: 0, a: 0}
     - _Projection_plane_XYZ: {r: 0.9, g: 0.73, b: 1, a: 0}
-    - _Scroll_speed: {r: 0.2, g: 0, b: 0, a: 0}
+    - _Scroll_speed: {r: 0.1, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 5, g: 0, b: 0, a: 0}
     - _Sqeeze_position: {r: 0, g: 0, b: 1, a: 0}
@@ -320,7 +326,8 @@ Material:
     - _float: {r: 0, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
-    - _speed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _scroll_speed: {r: 0, g: 0.1, b: 0, a: 0}
+    - _speed: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 2.06, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
