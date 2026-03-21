@@ -1249,7 +1249,7 @@
     "m_Type": "UnityEditor.ShaderGraph.Vector3MaterialSlot",
     "m_ObjectId": "4b3c5a1246f44d7582c3a3dbda678187",
     "m_Id": 0,
-    "m_DisplayName": "Amount_secondary",
+    "m_DisplayName": "Secondary_amount",
     "m_SlotType": 1,
     "m_Hidden": false,
     "m_ShaderOutputName": "Out",
