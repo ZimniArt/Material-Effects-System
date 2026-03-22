@@ -65,7 +65,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Details:
-        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Dissolve_map:
@@ -310,7 +310,7 @@ Material:
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Details_amount: {r: 0, g: 0, b: 0, a: 0}
-    - _Details_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Details_scroll: {r: 0, g: 0.1, b: 0, a: 0}
     - _Details_tiling: {r: 0, g: 0, b: 0, a: 0}
     - _Direction: {r: 0, g: 1, b: 0, a: 0}
     - _Direction_1: {r: 0, g: 0, b: 0, a: 0}
@@ -329,10 +329,10 @@ Material:
     - _Mask_Amount: {r: 0.29, g: 1, b: 1, a: 0}
     - _Mask_Scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _Mask_tiling: {r: 1, g: 1, b: 1, a: 0}
-    - _Noise_amount: {r: 0, g: 0.78, b: 0, a: 0}
+    - _Noise_amount: {r: 0, g: 1, b: 0, a: 0}
     - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _Noise_scroll: {r: 0, g: 0.1, b: 0, a: 0}
+    - _Noise_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _Noise_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _Noise_tiling: {r: 1, g: 1, b: 1, a: 0}
     - _Object_world_view_0: {r: 0, g: 0, b: 1, a: 0}
@@ -363,7 +363,7 @@ Material:
     - _scroll_speed: {r: 0, g: 0.1, b: 0, a: 0}
     - _speed: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _uv_view_world_local: {r: 1, g: 0, b: 0, a: 0}
+    - _uv_view_world_local: {r: 0, g: 0, b: 1, a: 0}
     - _wave_scale: {r: 2.06, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5313333404574686791
