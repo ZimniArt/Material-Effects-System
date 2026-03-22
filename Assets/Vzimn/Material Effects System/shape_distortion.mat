@@ -192,6 +192,34 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _frag_dist_Noise:
+        m_Texture: {fileID: 2800000, guid: 716300c171d559c4ab5278a51852b298, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _frag_dist_detail_map:
+        m_Texture: {fileID: 2800000, guid: 4ca96e575e51c28458bb5af643c5d756, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _frag_dist_noise:
+        m_Texture: {fileID: 2800000, guid: f6c5091c61b99684a9406ee97473e65b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _frag_dist_noise_map:
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _frag_main_texture:
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _vert_dist_Details:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _vert_dist_Noise:
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 0.4, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -325,6 +353,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
+    - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Mask_Amount: {r: 0.29, g: 1, b: 1, a: 0}
     - _Mask_Scroll_speed: {r: 0, g: 0, b: 0, a: 0}
@@ -359,7 +388,14 @@ Material:
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _float: {r: 0, g: 0, b: 0, a: 0}
     - _frag_Plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_uv_world_local_view: {r: 0, g: 0, b: 0, a: 1}
+    - _frag_dist_Moise_amount: {r: 0.15, g: 0, b: 0, a: 0}
+    - _frag_dist_detail_amount: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dist_noise_amount: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dist_noise_scroll: {r: -0.1, g: 0, b: 0, a: 0}
+    - _frag_plane_XYZ: {r: 0, g: 1, b: 0, a: 0}
+    - _frag_tint_color: {r: 1, g: 1, b: 1, a: 0}
+    - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _scroll_speed: {r: 0, g: 0.1, b: 0, a: 0}
@@ -368,6 +404,10 @@ Material:
     - _uv_view_world_local: {r: 0, g: 0, b: 1, a: 0}
     - _uv_world_local: {r: 1, g: 0, b: 0, a: 0}
     - _vert_Plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_dist_Noise_amount: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_dist_Noise_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_dist_details_amount: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_dist_details_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _vert_uv_world_local: {r: 1, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 2.06, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
