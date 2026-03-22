@@ -4491,7 +4491,7 @@
     "m_Group": {
         "m_Id": ""
     },
-    "m_Name": "Plane_swizzle",
+    "m_Name": "ActivePlane_switcher",
     "m_DrawState": {
         "m_Expanded": true,
         "m_Position": {
