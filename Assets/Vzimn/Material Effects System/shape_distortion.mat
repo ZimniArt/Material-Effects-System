@@ -192,6 +192,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _frag_dis_main_texture:
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _frag_dist_Noise:
         m_Texture: {fileID: 2800000, guid: 716300c171d559c4ab5278a51852b298, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -209,7 +213,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _frag_main_texture:
-        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4c679abcbfc17a847921268a382c9993, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _vert_dist_Details:
@@ -318,6 +322,8 @@ Material:
     - _amount: 0.79
     - _flat_world_position: 1
     - _float: -0.33
+    - _frag_dis_amount: 0.157
+    - _frag_dis_smoothness: 0.755
     - _position: 1
     - _power: -3.6
     - _projection: 0
@@ -388,6 +394,10 @@ Material:
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _float: {r: 0, g: 0, b: 0, a: 0}
     - _frag_Plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dis_amount: {r: -0.1, g: 0, b: 0, a: 0}
+    - _frag_dis_plane_XYZ: {r: 0, g: 1, b: 0, a: 0}
+    - _frag_dis_smoothness: {r: 0.1, g: 0, b: 0, a: 0}
+    - _frag_dis_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _frag_dist_Moise_amount: {r: 0.15, g: 0, b: 0, a: 0}
     - _frag_dist_detail_amount: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
