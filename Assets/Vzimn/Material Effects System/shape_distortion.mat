@@ -295,7 +295,7 @@ Material:
     - _PingPong: 1
     - _Planar_projection: 1
     - _Plane_planar_projection: 0
-    - _Position: 4.48
+    - _Position: 1.48
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
