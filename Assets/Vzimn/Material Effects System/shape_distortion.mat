@@ -193,13 +193,13 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _belnd_mask:
-        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0.41, y: -0.25}
-    - _belnd_texture:
-        m_Texture: {fileID: 2800000, guid: 4a2c4a82acc1ffe4a9a76c3f424c67bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: f6c5091c61b99684a9406ee97473e65b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _belnd_texture:
+        m_Texture: {fileID: 2800000, guid: 4c679abcbfc17a847921268a382c9993, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0.53, y: -1.95}
     - _frag_dis_main_texture:
         m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -221,7 +221,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _frag_main_texture:
-        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4c679abcbfc17a847921268a382c9993, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _vert_dist_Details:
@@ -250,7 +250,7 @@ Material:
     - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Alpha_cliping_treshold: 0.149
+    - _Alpha_cliping_treshold: 0
     - _Amount: 0
     - _Animated: 1
     - _BaseMap_influence: 1
@@ -358,7 +358,7 @@ Material:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Blend_contrast: {r: 0, g: 1, b: 0, a: 0}
-    - _Blend_contrast_black_white: {r: 0.2, g: 0.21, b: 0, a: 0}
+    - _Blend_contrast_black_white: {r: 0, g: 1, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Details_amount: {r: 0, g: 0, b: 0, a: 0}
     - _Details_scroll: {r: 0, g: 0, b: 0, a: 0}
@@ -410,7 +410,7 @@ Material:
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
-    - _belnd_tint: {r: 1, g: 1, b: 1, a: 0}
+    - _belnd_tint: {r: 1, g: 1, b: 1, a: 1}
     - _f_dis_dir_UV_World_Local_View: {r: 0, g: 1, b: 0, a: 0}
     - _f_dis_dir_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
     - _f_dis_space_UV_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
@@ -427,7 +427,7 @@ Material:
     - _frag_dist_noise_amount: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_noise_scroll: {r: -0.1, g: 0, b: 0, a: 0}
     - _frag_plane_XYZ: {r: 0, g: 1, b: 0, a: 0}
-    - _frag_tint_color: {r: 1, g: 1, b: 1, a: 0}
+    - _frag_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
