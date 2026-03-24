@@ -192,6 +192,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _belnd_mask:
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0.41, y: -0.25}
+    - _belnd_texture:
+        m_Texture: {fileID: 2800000, guid: 4a2c4a82acc1ffe4a9a76c3f424c67bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _frag_dis_main_texture:
         m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -223,7 +231,7 @@ Material:
     - _vert_dist_Noise:
         m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
         m_Scale: {x: 0.4, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0, y: 0.45}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -248,6 +256,9 @@ Material:
     - _BaseMap_influence: 1
     - _Blend: 0
     - _BlendModePreserveSpecular: 1
+    - _Blend_Contrast: 2.32
+    - _Blend_amount: 1
+    - _Blend_smoothness: 13.45
     - _BumpScale: 1
     - _COLOR_OVER_TIME: 0
     - _ClearCoatMask: 0
@@ -326,7 +337,7 @@ Material:
     - _amount: 0.79
     - _flat_world_position: 1
     - _float: -0.33
-    - _frag_dis_amount: 0.029
+    - _frag_dis_amount: 0
     - _frag_dis_smoothness: 0.4
     - _position: 1
     - _power: -3.6
@@ -346,6 +357,8 @@ Material:
     - _Amount_secondary: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
+    - _Blend_contrast: {r: 0, g: 1, b: 0, a: 0}
+    - _Blend_contrast_black_white: {r: 0.2, g: 0.21, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _Details_amount: {r: 0, g: 0, b: 0, a: 0}
     - _Details_scroll: {r: 0, g: 0, b: 0, a: 0}
@@ -397,6 +410,7 @@ Material:
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
+    - _belnd_tint: {r: 1, g: 1, b: 1, a: 0}
     - _f_dis_dir_UV_World_Local_View: {r: 0, g: 1, b: 0, a: 0}
     - _f_dis_dir_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
     - _f_dis_space_UV_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
