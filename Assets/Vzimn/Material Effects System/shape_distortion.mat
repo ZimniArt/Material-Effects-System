@@ -335,15 +335,18 @@ Material:
     - _World_direction: 0
     - _ZWrite: 1
     - _amount: 0.79
+    - _contrast: 0
     - _flat_world_position: 1
     - _float: -0.33
     - _frag_dis_amount: 0
     - _frag_dis_smoothness: 0.4
-    - _position: 1
-    - _power: -3.6
+    - _invert: 1
+    - _position: 0.239
+    - _power: 0.89
     - _projection: 0
     - _sharpness: 0
     - _smoothnes: 0.16
+    - _softness: 0.083
     - _triplanar_is_worldSpace: 1
     - _v3: 0
     - _wave_power: 0
@@ -378,10 +381,12 @@ Material:
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Glow_color: {r: 0, g: 0.8762765, b: 1, a: 0.62352943}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Mask_Amount: {r: 0.29, g: 1, b: 1, a: 0}
     - _Mask_Scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _Mask_tiling: {r: 1, g: 1, b: 1, a: 0}
+    - _Min_max_position: {r: 0.58, g: 0.72, b: 0, a: 0}
     - _Noise_amount: {r: 0, g: 0, b: 0, a: 0}
     - _Noise_maps_influence: {r: 1, g: 1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
@@ -405,7 +410,7 @@ Material:
     - _Tint_color: {r: 1, g: 1, b: 1, a: 0}
     - _Type_of_Projection: {r: 1, g: 0.85, b: 0, a: 0}
     - _UV_screen_projection_0: {r: 1, g: 0, b: 0, a: 0}
-    - _Vector2: {r: 0, g: 0, b: 0, a: 0}
+    - _Vector2: {r: 0.52, g: 0.76, b: 0, a: 0}
     - _Vector2_1: {r: 0, g: 0, b: 0, a: 0}
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
