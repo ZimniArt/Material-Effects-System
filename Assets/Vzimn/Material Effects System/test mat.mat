@@ -216,6 +216,7 @@ Material:
     - _Blend_amount: 0
     - _Blend_position: 0.17
     - _Blend_softness: 0.06
+    - _Border_sharpness: 0.127
     - _BumpScale: 1
     - _COLOR_OVER_TIME: 0
     - _ClearCoatMask: 0
@@ -226,11 +227,11 @@ Material:
     - _DIstorion_power: 0.1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
-    - _Directional_Disolve: 1
+    - _Directional_Disolve: 0
     - _Directional_dissolve: 0
     - _Disolve_map_scale: 2.57
     - _Disolve_postion: 1.34
-    - _Dissolve_border_size: 0.359
+    - _Dissolve_border_size: 0.34
     - _Distortio_speed: 0.25
     - _Distortion_amount: 0
     - _Distortion_power: 0.03
@@ -264,7 +265,7 @@ Material:
     - _PingPong: 1
     - _Planar_projection: 1
     - _Plane_planar_projection: 0
-    - _Position: -7.99
+    - _Position: -3.36
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -282,7 +283,7 @@ Material:
     - _TIme_is_sine: 1
     - _TRIPLANAR: 0
     - _TRIPLANAR_SAMPLING: 1
-    - _Texture_disolve: 1
+    - _Texture_disolve: 0
     - _Triplanar_projection: 0
     - _Triplnar_sharpness: 0.69
     - _UV_VIew: 0
@@ -291,18 +292,20 @@ Material:
     - _World_direction: 0
     - _ZWrite: 1
     - _amount: 0
+    - _dissolve_effect: 1
+    - _dissolve_opacity: 0.1
     - _flat_world_position: 1
-    - _frag_dis_Amount: 0.729
+    - _frag_dis_Amount: 0
     - _frag_dis_amount: 1
-    - _frag_dis_opacity: 1
+    - _frag_dis_opacity: 0.59
     - _frag_dis_position: 0.911
-    - _frag_dis_smoothness: 0
+    - _frag_dis_smoothness: 1
     - _invert: 0
     - _position: 0.25
     - _power: -3.6
     - _projection: 0
     - _sharpness: 0
-    - _size: 0.962
+    - _size: 0.443
     - _smoothnes: 0.16
     - _softness: 0
     - _triplanar_is_worldSpace: 1
@@ -317,9 +320,9 @@ Material:
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Blend_contrast_black_white: {r: 0, g: 1, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Direction: {r: 1, g: 0, b: 0, a: 0}
+    - _Direction: {r: 0, g: 0, b: 1, a: 0}
     - _Direction_1: {r: 0, g: 0, b: 0, a: 0}
-    - _Dissolve_border_Color: {r: 1, g: 0.2948935, b: 0, a: 1}
+    - _Dissolve_border_Color: {r: 1, g: 0, b: 0.10096163, a: 1}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
@@ -355,7 +358,7 @@ Material:
     - _Vector3: {r: 3.18, g: 1, b: 1, a: 0}
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
-    - _belnd_tint: {r: 0, g: 1, b: 0.5879953, a: 1}
+    - _belnd_tint: {r: 1, g: 1, b: 1, a: 1}
     - _f_dis_space_UV_World_Local_View: {r: 0, g: 1, b: 0, a: 0}
     - _frag_dis_plane_XYZ: {r: 0, g: 0, b: 0.97, a: 0}
     - _frag_dis_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
