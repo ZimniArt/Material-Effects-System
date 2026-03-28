@@ -33,6 +33,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _2tex_texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _BaseMap:
         m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -165,12 +169,20 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _detail_texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _dissolve_Texture:
+        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _dissolve_detail_t:
         m_Texture: {fileID: 2800000, guid: b4d0fccaefae0984d98bf2dc59a4168f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _dissolve_main_t:
-        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
+        m_Texture: {fileID: 10300, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _frag_dis_main_texture:
@@ -186,6 +198,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _frag_main_texture:
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _main_texture:
         m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -239,7 +255,7 @@ Material:
     - _Directional_dissolve: 0
     - _Disolve_map_scale: 2.57
     - _Disolve_postion: 1.34
-    - _Dissolve_border_size: 0.143
+    - _Dissolve_border_size: 0.033
     - _Distortio_speed: 0.25
     - _Distortion_amount: 0
     - _Distortion_power: 0.03
@@ -300,7 +316,9 @@ Material:
     - _World_direction: 0
     - _ZWrite: 1
     - _amount: 0
-    - _dissolve_effect: 0.575
+    - _disolve_smoothness: 0
+    - _dissolve_effect: 0.365
+    - _dissolve_master_opacity: 1
     - _dissolve_opacity: 1
     - _flat_world_position: 1
     - _frag_dis_Amount: 0
@@ -322,6 +340,9 @@ Material:
     - _world_position: 1
     m_Colors:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
+    - _2tex_color_opacity: {r: 1, g: 1, b: 1, a: 0}
+    - _2tex_dis_plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
+    - _2tex_space_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _Active_PLANE_XYZ: {r: 1, g: 0, b: 0, a: 0}
     - _Amount: {r: 1, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
@@ -331,7 +352,7 @@ Material:
     - _Direction: {r: 0, g: 0, b: 1, a: 0}
     - _Direction_1: {r: 0, g: 0, b: 0, a: 0}
     - _Dissolve_border_Color: {r: 1, g: 0.67668825, b: 0, a: 1}
-    - _Dissolve_color: {r: 0, g: 0.9301295, b: 1, a: 0.2901961}
+    - _Dissolve_color: {r: 1, g: 0, b: 0.60188293, a: 0}
     - _Distortion_Speed: {r: 1.42, g: 0, b: 0, a: 0}
     - _Distortion_Speed_3: {r: 0.1, g: 0.1, b: 0.1, a: 0}
     - _Distortion_scale: {r: 0, g: 0, b: 0, a: 0}
@@ -344,7 +365,8 @@ Material:
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _Glow_color: {r: 1, g: 1, b: 1, a: 0}
+    - _Glow_color: {r: 1, g: 0, b: 0, a: 0}
+    - _Glow_color_opacity: {r: 1, g: 0, b: 0, a: 0}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Noise_maps_influence: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
@@ -368,31 +390,35 @@ Material:
     - _Vector4: {r: 0.3, g: 0.28, b: 0, a: 0}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _belnd_tint: {r: 1, g: 0, b: 0.28263664, a: 1}
-    - _dissolve_detail_amount: {r: 0, g: 100, b: 0, a: 0}
+    - _detail_influence: {r: 0, g: 0, b: 0, a: 0}
+    - _detail_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _dissolve_detail_amount: {r: 10, g: 10, b: 0, a: 0}
     - _dissolve_detail_scroll_speed: {r: 0, g: -0.01, b: 0, a: 0}
     - _dissolve_main_amount: {r: 1, g: 0, b: 0, a: 0}
-    - _dissolve_main_scroll_speed: {r: 0, g: 0.03, b: 0, a: 0}
-    - _f_dis_space_UV_World_Local_View: {r: 0, g: 1, b: 0, a: 0}
+    - _dissolve_main_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _dissolve_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _f_dis_space_UV_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
     - _frag_dis_plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _frag_dist_detail_amount: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_dist_noise_amount: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_dist_noise_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dist_noise_amount: {r: 0.01, g: 0, b: 0, a: 0}
+    - _frag_dist_noise_scroll: {r: 0.1, g: 0, b: 0, a: 0}
     - _frag_plane_XYZ: {r: 0, g: 1, b: 0, a: 0}
     - _frag_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _tint_color: {r: 1, g: 1, b: 1, a: 0}
     - _vert_Plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
-    - _vert_dist_Noise_amount: {r: 1, g: 0, b: 0, a: 0}
-    - _vert_dist_Noise_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_dist_Noise_amount: {r: 1, g: 1, b: 0, a: 0}
+    - _vert_dist_Noise_scroll: {r: 0.01, g: 0, b: 0, a: 0}
     - _vert_dist_details_amount: {r: 0, g: 0, b: 0, a: 0}
     - _vert_dist_details_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _vert_uv_world_local: {r: 0, g: 0, b: 0, a: 0}
-    - _vert_uv_world_local_view: {r: 0, g: 0, b: 0, a: 0}
+    - _vert_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _wave_scale: {r: 0, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &5313333404574686791
