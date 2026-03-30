@@ -3630,8 +3630,8 @@
     "m_ObjectId": "0f573c7a8f2743728dc22f3c3acd63e4",
     "m_Title": "DIrection and Position",
     "m_Position": {
-        "x": 2418.999755859375,
-        "y": 1140.9998779296875
+        "x": 2419.0,
+        "y": 1141.0
     }
 }
 
@@ -3956,8 +3956,8 @@
     "m_ObjectId": "13194b4d65034ee7a0a1c0901bef33a3",
     "m_Title": "color",
     "m_Position": {
-        "x": 5869.99951171875,
-        "y": -212.00001525878907
+        "x": 5870.0,
+        "y": -212.0
     }
 }
 
@@ -4312,8 +4312,8 @@
     "m_ObjectId": "19588470276441ab8c54e91e0901ce81",
     "m_Title": "Frag main color",
     "m_Position": {
-        "x": 3420.999755859375,
-        "y": 43.999996185302737
+        "x": 3421.0,
+        "y": 44.0
     }
 }
 
@@ -4349,7 +4349,7 @@
     "m_Title": "mixing 4 chanels in 1",
     "m_Position": {
         "x": 1476.0,
-        "y": 711.9998779296875
+        "y": 712.0
     }
 }
 
@@ -4413,7 +4413,7 @@
     "m_Title": "Fragment space",
     "m_Position": {
         "x": 1917.0,
-        "y": 141.9998779296875
+        "y": 142.0
     }
 }
 
@@ -4475,7 +4475,7 @@
     "m_Title": "Dissolve texture",
     "m_Position": {
         "x": 842.0,
-        "y": 718.9998779296875
+        "y": 719.0
     }
 }
 
@@ -4984,7 +4984,7 @@
     "m_Title": "Second Texture",
     "m_Position": {
         "x": 5104.0,
-        "y": -320.9998779296875
+        "y": -321.0
     }
 }
 
@@ -5278,7 +5278,7 @@
     "m_Title": "Space",
     "m_Position": {
         "x": 1774.0,
-        "y": 1224.9998779296875
+        "y": 1225.0
     }
 }
 
@@ -5373,8 +5373,8 @@
     "m_ObjectId": "2ebb0f2541e645d187eafc3c471e27ab",
     "m_Title": "contrast",
     "m_Position": {
-        "x": 5767.99951171875,
-        "y": -524.9998779296875
+        "x": 5768.0,
+        "y": -525.0
     }
 }
 
@@ -5423,8 +5423,8 @@
     "m_ObjectId": "2f89205a54ce457ca83bc1f2885ea18d",
     "m_Title": "Disolve mask",
     "m_Position": {
-        "x": 3515.999755859375,
-        "y": 757.9998779296875
+        "x": 3516.0,
+        "y": 758.0
     }
 }
 
@@ -5473,8 +5473,8 @@
     "m_ObjectId": "31f95aa73ad9470284fc33e5bce2c820",
     "m_Title": "Fragment_distortion",
     "m_Position": {
-        "x": 2598.999755859375,
-        "y": -209.99989318847657
+        "x": 2599.0,
+        "y": -210.0
     }
 }
 
@@ -6182,7 +6182,7 @@
     "m_Title": "Fragment disolve space",
     "m_Position": {
         "x": 154.0,
-        "y": 669.9998779296875
+        "y": 670.0
     }
 }
 
@@ -7089,8 +7089,8 @@
     "m_ObjectId": "54ba1231ada64379af9757a6866bb6f9",
     "m_Title": "Border color",
     "m_Position": {
-        "x": 4200.99951171875,
-        "y": 230.00013732910157
+        "x": 4201.0,
+        "y": 230.0
     }
 }
 
@@ -8065,8 +8065,8 @@
     "m_ObjectId": "630071601647403fa82760006b096aad",
     "m_Title": "Directional dissolve switch",
     "m_Position": {
-        "x": 3304.999755859375,
-        "y": 1112.9998779296875
+        "x": 3305.0,
+        "y": 1113.0
     }
 }
 
@@ -8161,7 +8161,7 @@
     "m_Title": "scroll",
     "m_Position": {
         "x": 4424.0,
-        "y": -443.9998779296875
+        "y": -444.0
     }
 }
 
@@ -8556,8 +8556,8 @@
     "m_ObjectId": "6a3a73879fec4043b43d0ac269de95e3",
     "m_Title": "Glow",
     "m_Position": {
-        "x": 5933.99951171875,
-        "y": 465.9998474121094
+        "x": 5934.0,
+        "y": 466.0
     }
 }
 
@@ -8591,8 +8591,8 @@
     "m_ObjectId": "6b20731f63b7431d81781f25eec546e1",
     "m_Title": "glow color",
     "m_Position": {
-        "x": 6542.99951171875,
-        "y": 289.9998779296875
+        "x": 6543.0,
+        "y": 290.0
     }
 }
 
@@ -8689,8 +8689,8 @@
     "m_ObjectId": "6db7fef5c8c4442587c96ad835d7dcc3",
     "m_Title": "Border opacity mask",
     "m_Position": {
-        "x": 4401.99951171875,
-        "y": 361.9999084472656
+        "x": 4402.0,
+        "y": 362.0
     }
 }
 
@@ -9390,7 +9390,7 @@
     "m_Title": "Distortion_data_to_fragment",
     "m_Position": {
         "x": 4830.0,
-        "y": -848.0000610351563
+        "y": -848.0
     }
 }
 
@@ -9448,7 +9448,7 @@
     "m_ObjectId": "7df7da4774fd4ced8230b505d318de98",
     "m_Title": "Vertex_addition_and_space_correction",
     "m_Position": {
-        "x": 4990.99951171875,
+        "x": 4991.0,
         "y": -1475.0
     }
 }
@@ -11574,8 +11574,8 @@
     "m_ObjectId": "9e0f718692dc46b79d8433404b807f82",
     "m_Title": "scroll",
     "m_Position": {
-        "x": 2674.999755859375,
-        "y": -439.9998779296875
+        "x": 2675.0,
+        "y": -440.0
     }
 }
 
@@ -12711,8 +12711,8 @@
     "m_ObjectId": "ac91e6b6d7e146d59ce0bbfc114e2ff1",
     "m_Title": "visibility by alpha",
     "m_Position": {
-        "x": 6608.99951171875,
-        "y": -163.00001525878907
+        "x": 6609.0,
+        "y": -163.0
     }
 }
 
@@ -14762,7 +14762,7 @@
     "m_ObjectId": "cbc891d73b1f49c8a0a02befe2a35f29",
     "m_Title": "Vertex space",
     "m_Position": {
-        "x": 3469.999755859375,
+        "x": 3470.0,
         "y": -1242.0
     }
 }
@@ -15424,8 +15424,8 @@
     "m_ObjectId": "d4e34c95443140c6906babdb11490a3c",
     "m_Title": "Creating 2 offset masks",
     "m_Position": {
-        "x": 2446.999755859375,
-        "y": 684.9998779296875
+        "x": 2447.0,
+        "y": 685.0
     }
 }
 
@@ -15582,8 +15582,8 @@
     "m_ObjectId": "d9e0b55301af45bdb76e638b7fc7d442",
     "m_Title": "Dissolve _output_amount",
     "m_Position": {
-        "x": 4006.999755859375,
-        "y": 716.9999389648438
+        "x": 4007.0,
+        "y": 717.0
     }
 }
 
@@ -15780,7 +15780,7 @@
     "m_CastShadows": true,
     "m_ReceiveShadows": true,
     "m_SupportsLODCrossFade": false,
-    "m_CustomEditorGUI": "",
+    "m_CustomEditorGUI": "ShaderGUI",
     "m_SupportVFX": false
 }
 
