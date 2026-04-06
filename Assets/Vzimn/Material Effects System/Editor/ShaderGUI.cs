@@ -3,7 +3,7 @@ using UnityEditor;
 using System.Web;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
-{ 
+{
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         void DrawProperty(string property, string inspectorName)
@@ -16,7 +16,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             Vector4 v4 = rawProperty.vectorValue;
             Vector3 v3 = rawProperty.vectorValue;
             v3 = EditorGUILayout.Vector3Field(inspectorName, v3);
-            rawProperty.vectorValue = new Vector4(v3.x, v3.y,v3.z, v4.w);
+            rawProperty.vectorValue = new Vector4(v3.x, v3.y, v3.z, v4.w);
         }
         void v4_DropDown(string property, string inspectorName, string[] options)
         {
@@ -40,11 +40,27 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             rawProperty.vectorValue = new_v4;
         }
 
+        int Get_v4_index(string property)
+        {
+            var rawProperty = FindProperty(property, properties);
+            Vector4 v4 = rawProperty.vectorValue;
+            int index = 0;
+
+            if (v4.x == 1) index = 0;
+            else if (v4.y == 1) index = 1;
+            else if (v4.z == 1) index = 2;
+            else if (v4.w == 1) index = 3;
+            return index;
+        }
+
+
         //Main Texture
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
 
-        DrawProperty_v3("_frag_plane_XYZ", "Plane");
+        int space = Get_v4_index("_frag_uv_world_local_view");
+        if (space == 1 || space == 2)  DrawProperty_v3("_frag_plane_XYZ", "Plane");
+
         DrawProperty("_main_texture", "Texture");
         DrawProperty("_main_tint_color", "Color");
         DrawProperty("_Alpha_cliping_treshold", "Threshold");
