@@ -424,9 +424,10 @@ Material:
     - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_noise_amount: {r: 0, g: 0.1, b: 0, a: 0}
     - _frag_dist_noise_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_plane_XYZ: {r: 0, g: 1, b: 0, a: 0}
+    - _frag_plane_XYZ: {r: 1, g: 0, b: 0, a: 0}
     - _frag_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
+    - _main_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
