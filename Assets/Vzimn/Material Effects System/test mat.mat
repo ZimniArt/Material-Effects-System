@@ -214,7 +214,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture:
-        m_Texture: {fileID: 2800000, guid: d3ba83ee10599814d8da77d27be7a65d, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture_1:
@@ -247,7 +247,7 @@ Material:
     - _Add_Multiply: 1
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Alpha_cliping_treshold: 0
+    - _Alpha_cliping_treshold: 0.326
     - _Amount: 0
     - _Animated: 1
     - _BaseMap_influence: 1
@@ -424,10 +424,10 @@ Material:
     - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_noise_amount: {r: 0, g: 0.1, b: 0, a: 0}
     - _frag_dist_noise_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_plane_XYZ: {r: 1, g: 0, b: 0, a: 0}
+    - _frag_plane_XYZ: {r: 0.7, g: 1, b: 0, a: 0}
     - _frag_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
-    - _main_tint_color: {r: 1, g: 1, b: 1, a: 1}
+    - _main_tint_color: {r: 1, g: 0.47641504, b: 0.47641504, a: 0.39607844}
     - _offset: {r: 1, g: 1, b: 0, a: 0}
     - _offset_amount: {r: 0, g: 0, b: 0, a: 0}
     - _texture_scroll_speed: {r: 0, g: 0, b: 0, a: 0}

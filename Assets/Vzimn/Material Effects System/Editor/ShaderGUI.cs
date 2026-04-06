@@ -55,15 +55,16 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
 
         //Main Texture
+
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
 
         int space = Get_v4_index("_frag_uv_world_local_view");
         if (space == 1 || space == 2)  DrawProperty_v3("_frag_plane_XYZ", "Plane");
 
-        DrawProperty("_main_texture", "Texture");
         DrawProperty("_main_tint_color", "Color");
-        DrawProperty("_Alpha_cliping_treshold", "Threshold");
+        DrawProperty("_Alpha_cliping_treshold", "Alpha Clipping Threshold");
+        DrawProperty("_main_texture", "Texture");
         
         //Texture Distrorion
     }
