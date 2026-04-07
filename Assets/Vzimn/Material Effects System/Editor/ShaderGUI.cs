@@ -4,7 +4,8 @@ using System.Web;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
-        bool textureDistortionGroup = true;
+        bool textureDistortionGroup_active = true;
+        bool textureDistortionGroup_visible = true;
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         #region Functions
@@ -57,8 +58,9 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         #endregion
 
 
+        //Main Texture
 
-     EditorGUILayout.PrefixLabel("Main Texture");
+        EditorGUILayout.PrefixLabel("Main Texture");
 
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
@@ -69,19 +71,26 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         DrawProperty("_main_texture", "Texture");
 
 
-     EditorGUILayout.PrefixLabel("Texture distortion");
+        //Texture distortion
 
-        textureDistortionGroup = EditorGUILayout.BeginToggleGroup("Texture Distrorion", textureDistortionGroup);
-        if (textureDistortionGroup)
+        EditorGUILayout.BeginHorizontal();
+        textureDistortionGroup_active = EditorGUILayout.Toggle(textureDistortionGroup_active, GUILayout.Width(20));
+
+        textureDistortionGroup_visible = GUILayout.Toggle(textureDistortionGroup_visible, "Texture Distortion", EditorStyles.foldoutHeader);
+        EditorGUILayout.EndHorizontal();
+
+        EditorGUI.BeginDisabledGroup(!textureDistortionGroup_active);
+        if (textureDistortionGroup_visible)
         {
-        DrawProperty_v3("_Fragment_scroll", "scroll speed");
-        DrawProperty("_frag_dist_noise_map", "Distortion texture");
-        DrawProperty("_frag_dist_noise_amount", "Distortion amount");
-        DrawProperty_v3("_frag_dist_noise_scroll", "noise scroll speed");
-        DrawProperty("_frag_dist_detail_map", "Detail map");
-        DrawProperty("_frag_dist_detail_amount", "detail amount");
+            DrawProperty_v3("_Fragment_scroll", "scroll speed");
+            DrawProperty("_frag_dist_noise_map", "Distortion texture");
+            DrawProperty("_frag_dist_noise_amount", "Distortion amount");
+            DrawProperty_v3("_frag_dist_noise_scroll", "noise scroll speed");
+            DrawProperty("_frag_dist_detail_map", "Detail map");
+            DrawProperty("_frag_dist_detail_amount", "detail amount");
         } 
-        EditorGUILayout.EndToggleGroup();
+        EditorGUI.EndDisabledGroup();
+        
     }
 
 

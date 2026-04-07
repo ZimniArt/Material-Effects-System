@@ -382,7 +382,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
-    - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Fragment_scroll: {r: 0.1, g: 0, b: 0, a: 0}
     - _Glow_color: {r: 1, g: 0, b: 0, a: 0}
     - _Glow_color_opacity: {r: 0.19127488, g: 1, b: 0, a: 1}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
