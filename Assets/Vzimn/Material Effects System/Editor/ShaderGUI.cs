@@ -73,10 +73,11 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             }
             EditorGUI.EndDisabledGroup();
         }
-        
+
         #endregion
 
 
+        //Main texture 
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
         int space = Get_v4_index("_frag_uv_world_local_view");
