@@ -4,8 +4,11 @@ using System.Web;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
-        bool textureDistortionGroup_active = true;
-        bool textureDistortionGroup_visible = true;
+        bool textureDistortionGroup_active = false;
+        bool textureDistortionGroup_visible = false;
+
+        bool extra_tex_Group_active = false;
+        bool extra_tex_visible = false;
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         #region Functions
@@ -55,12 +58,24 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             else if (v4.w == 1) index = 3;
             return index;
         }
+        
+        void FoldOut(ref bool active, ref bool visible, string label, System.Action drawContent)
+        {
+            EditorGUILayout.BeginHorizontal();
+            active = EditorGUILayout.Toggle(active, GUILayout.Width(20));
+            visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUI.BeginDisabledGroup(!active);
+            if (visible)
+            {
+                drawContent();
+            }
+            EditorGUI.EndDisabledGroup();
+        }
+        
         #endregion
 
-
-        //Main Texture
-
-        EditorGUILayout.PrefixLabel("Main Texture");
 
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
@@ -72,15 +87,9 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
 
         //Texture distortion
+        FoldOut(ref textureDistortionGroup_active,ref textureDistortionGroup_visible, "Texture Distortion", textureDistortion_content);
 
-        EditorGUILayout.BeginHorizontal();
-        textureDistortionGroup_active = EditorGUILayout.Toggle(textureDistortionGroup_active, GUILayout.Width(20));
-
-        textureDistortionGroup_visible = GUILayout.Toggle(textureDistortionGroup_visible, "Texture Distortion", EditorStyles.foldoutHeader);
-        EditorGUILayout.EndHorizontal();
-
-        EditorGUI.BeginDisabledGroup(!textureDistortionGroup_active);
-        if (textureDistortionGroup_visible)
+        void textureDistortion_content()
         {
             DrawProperty_v3("_Fragment_scroll", "scroll speed");
             DrawProperty("_frag_dist_noise_map", "Distortion texture");
@@ -88,9 +97,24 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             DrawProperty_v3("_frag_dist_noise_scroll", "noise scroll speed");
             DrawProperty("_frag_dist_detail_map", "Detail map");
             DrawProperty("_frag_dist_detail_amount", "detail amount");
-        } 
-        EditorGUI.EndDisabledGroup();
-        
+        }
+
+
+        //Underlay texture
+        FoldOut(ref extra_tex_Group_active, ref extra_tex_visible, "Underlay Texture", UnderlayTexture_content);
+
+        void UnderlayTexture_content()
+        {
+            string[] spaceOptions_2tex = { "uv", "world", "local", "view" };
+            v4_DropDown("_2tex_space_uv_world_local_view", "Space", spaceOptions_2tex);
+            int space_2tex = Get_v4_index("_2tex_space_uv_world_local_view");
+            if (space_2tex == 1 || space_2tex == 2) DrawProperty_v3("_2tex_dis_plane_XYZ", "Plane");
+            DrawProperty("_2tex_texture", "texture");
+            DrawProperty("_2tex_color_opacity", "Color and Opacity");
+            DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
+        }
+
+
     }
 
 
