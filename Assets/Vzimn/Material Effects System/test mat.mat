@@ -349,7 +349,7 @@ Material:
     - _frag_dis_opacity: 0.59
     - _frag_dis_position: 0.911
     - _frag_dis_smoothness: 0.08
-    - _invert: 1
+    - _invert: 0
     - _multiplier: 92.04
     - _position: 0.166
     - _power: -3.6

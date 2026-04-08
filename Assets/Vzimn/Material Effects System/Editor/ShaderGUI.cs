@@ -11,9 +11,9 @@ public class ShaderGUI : UnityEditor.ShaderGUI
     bool vis_glow = SessionState.GetBool(nameof(vis_glow), false);
 
     //not tied to keywords
-    bool vis_dissolveTexture = false;
-    bool vis_dissolveControls = false;
-    bool vis_vertexDistrotion = false;
+    bool vis_dissolveTexture = SessionState.GetBool(nameof(vis_dissolveTexture), false);
+    bool vis_dissolveControls = SessionState.GetBool(nameof(vis_dissolveControls), false);
+    bool vis_vertexDistrotion = SessionState.GetBool(nameof(vis_vertexDistrotion), false);
 
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
@@ -67,10 +67,18 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         }
 
         
-        void Fold_simple(ref bool visible, string label, System.Action drawContent)
+        void Fold_simple(ref bool visible, string visible_name, string label, System.Action drawContent)
         {
             visible = EditorGUILayout.Foldout(visible, label);
-            if (visible) drawContent();
+            if (visible)
+            {
+                SessionState.SetBool(visible_name, true);
+                drawContent();
+            }
+            else
+            {
+                SessionState.SetBool(visible_name, false);
+            }
         }
 
         void FoldOut_keyword(string keyword, ref bool visible,string visible_name, string label, System.Action drawContent)
@@ -133,7 +141,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         void dissolve_effect_content()
         {
             EditorGUI.indentLevel = 3;
-            Fold_simple(ref vis_UnderlayTexture, "Underlay Texture", UnderlayTexture_content);
+            Fold_simple(ref vis_UnderlayTexture,nameof(vis_UnderlayTexture), "Underlay Texture", UnderlayTexture_content);
             void UnderlayTexture_content()
             {
                 string[] spaceOptions_2tex = { "uv", "world", "local", "view" };
@@ -145,7 +153,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
             }
 
-            Fold_simple(ref vis_dissolveTexture, "Disolve texture", Disolve_content);
+            Fold_simple(ref vis_dissolveTexture, nameof(vis_dissolveTexture), "Disolve texture", Disolve_content);
             void Disolve_content()
             {
                 string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
@@ -158,7 +166,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 DrawProperty("_detail_influence", "detail amount");
             }
 
-            Fold_simple(ref vis_dissolveControls, "Disolve Controls", Disolve_controls_content);
+            Fold_simple(ref vis_dissolveControls,nameof(vis_dissolveControls), "Disolve Controls", Disolve_controls_content);
             void Disolve_controls_content()
             {
                 DrawProperty("_dissolve_master_opacity", "opacity");
