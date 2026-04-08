@@ -6,11 +6,13 @@ using UnityEditor.SearchService;
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
 
-        bool vis_MainTextureDistortion = false;
-        bool vis_UnderlayTexture = false;
-        bool vis_Disolve = false;
-        bool vis_dissolveTexture = false;
-        bool vis_dissolveControls = false;
+    bool vis_MainTextureDistortion = false;
+    bool vis_UnderlayTexture = false;
+    bool vis_Disolve = false;
+    bool vis_dissolveTexture = false;
+    bool vis_dissolveControls = false;
+    bool vis_vertexDistrotion = false;
+    bool vis_glow = false;
 
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
@@ -62,7 +64,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             else if (v4.w == 1) index = 3;
             return index;
         }
-        
+
         void FoldOut(ref bool active, ref bool visible, string label, System.Action drawContent)
         {
             EditorGUILayout.BeginHorizontal();
@@ -93,8 +95,8 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
             if (new_keyword_state != keyword_state)
             {
-                if(new_keyword_state == true)   material.EnableKeyword(keyword);
-                else                            material.DisableKeyword(keyword);
+                if (new_keyword_state == true) material.EnableKeyword(keyword);
+                else material.DisableKeyword(keyword);
             }
             visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
             EditorGUILayout.EndHorizontal();
@@ -114,7 +116,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         string[] spaceOptions = { "uv", "world", "local", "view" };
         v4_DropDown("_frag_uv_world_local_view", "Space", spaceOptions);
         int space = Get_v4_index("_frag_uv_world_local_view");
-        if (space == 1 || space == 2)  DrawProperty_v3("_frag_plane_XYZ", "Plane");
+        if (space == 1 || space == 2) DrawProperty_v3("_frag_plane_XYZ", "Plane");
         DrawProperty("_main_tint_color", "Color");
         DrawProperty("_Alpha_cliping_treshold", "Alpha Clipping Threshold");
         DrawProperty("_main_texture", "Texture");
@@ -133,7 +135,8 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
 
         FoldOut_keyword("_DISSOLVE", ref vis_Disolve, "Dissolve effect", dissolve_effect_content);
-        void dissolve_effect_content(){
+        void dissolve_effect_content()
+        {
             EditorGUI.indentLevel = 3;
             //Underlay texture
             Fold_simple(ref vis_UnderlayTexture, "Underlay Texture", UnderlayTexture_content);
@@ -174,18 +177,56 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
 
                 DrawProperty("_Directional_Disolve", "directional dissolve");
-                float directionalDissolve = FindProperty("_Directional_Disolve",properties).floatValue;
-                if (directionalDissolve > 0.5) { 
+                float directionalDissolve = FindProperty("_Directional_Disolve", properties).floatValue;
+                if (directionalDissolve > 0.5)
+                {
                     DrawProperty_v3("_Direction", "DIrection");
-                    DrawProperty("_Position", "position"); 
+                    DrawProperty("_Position", "position");
                 }
             }
-            
+
+        }
+        FoldOut_keyword("_VERTEX_DISTORTION", ref vis_vertexDistrotion, "Shape Distortion", vertexDistortion_content);
+
+        void vertexDistortion_content()
+        {
+            //space
+
+            string[] spaceOptions = { "uv", "world", "local", "view" };
+            v4_DropDown("_vert_uv_world_local_view", "Space", spaceOptions);
+            int space = Get_v4_index("_vert_uv_world_local_view");
+            if (space == 1 || space == 2) DrawProperty_v3("_vert_Plane_XYZ", "Plane");
+
+            DrawProperty("_World_direction", "world aligned");
+            //distrotion
+            DrawProperty("_vert_dist_Noise", "distortion texture");
+            DrawProperty_v3("_vert_dist_Noise_scroll", "scroll");
+            DrawProperty("_vert_dist_Noise_amount", "noise amount");
+            DrawProperty("_vert_dist_Details", "detail texture");
+            DrawProperty_v3("_vert_dist_details_scroll", "scoll");
+            DrawProperty("_vert_dist_details_amount", "amount");
+
+            //to color
+            DrawProperty("_Vertex_color_affect", "affects color");
+            float affetctColor = FindProperty("_Vertex_color_affect", properties).floatValue;
+            if (affetctColor > 0.5)
+            {
+                DrawProperty("_Vertex_distortion_color", "Color");
+                DrawProperty("_contrast", "contrast");
+            }
+
         }
 
+        FoldOut_keyword("_GLOW", ref vis_glow, "Glow", glow_content);
+
+        void glow_content()
+        {
+            DrawProperty("_invert", "inverted");
+            DrawProperty("_position", "position");
+            DrawProperty("_softness", "softness");
+            DrawProperty("_Glow_color_opacity", "color and opacity");
+        }
     }
-
-
 }
 
 
