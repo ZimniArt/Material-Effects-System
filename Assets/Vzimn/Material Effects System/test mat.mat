@@ -170,7 +170,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _detail_texture:
-        m_Texture: {fileID: 2800000, guid: 48a5b3e7d20364342a1cf57d95bf5859, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8fbcf2b38d30c944583a3b7a352cc680, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _dissolve_Texture:
@@ -305,7 +305,7 @@ Material:
     - _PingPong: 1
     - _Planar_projection: 1
     - _Plane_planar_projection: 0
-    - _Position: 0.38
+    - _Position: 0.91
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -319,6 +319,7 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
+    - _TEXTURE_DISTRORTION: 0
     - _TIME_IS_SINE: 0
     - _TIme_is_sine: 1
     - _TRIPLANAR: 0
@@ -334,7 +335,7 @@ Material:
     - _amount: 0
     - _contrast: 74.19
     - _disolve_smoothness: 0
-    - _dissolve_effect: 0.454
+    - _dissolve_effect: 1
     - _dissolve_master_opacity: 1
     - _dissolve_opacity: 1
     - _flat_world_position: 1
@@ -367,7 +368,7 @@ Material:
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Blend_contrast_black_white: {r: 0, g: 1, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Direction: {r: 0, g: 1, b: 0, a: 0}
+    - _Direction: {r: 1.42, g: 0, b: 0, a: 0}
     - _Direction_1: {r: 0, g: 0, b: 0, a: 0}
     - _Dissolve_border_Color: {r: 1, g: 0, b: 0, a: 1}
     - _Dissolve_color: {r: 1, g: 0, b: 0.60188293, a: 0}
@@ -382,7 +383,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
-    - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _Fragment_scroll: {r: 0.7, g: 0, b: 0, a: 0}
     - _Glow_color: {r: 1, g: 0, b: 0, a: 0}
     - _Glow_color_opacity: {r: 0.19127488, g: 1, b: 0, a: 1}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
@@ -409,7 +410,7 @@ Material:
     - _Vertex_distortion_color: {r: 0.7710037, g: 0, b: 1, a: 1}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _belnd_tint: {r: 1, g: 0, b: 0.28263664, a: 1}
-    - _detail_influence: {r: 1, g: 0, b: 1, a: 0}
+    - _detail_influence: {r: 0, g: 0, b: 1, a: 0}
     - _detail_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _dissolve_detail_amount: {r: 10, g: 10, b: 0, a: 0}
     - _dissolve_detail_scroll_speed: {r: 0, g: -0.01, b: 0, a: 0}

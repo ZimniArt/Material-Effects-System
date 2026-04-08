@@ -4,7 +4,7 @@ using System.Web;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
-        bool textureDistortionGroup_active = false;
+
         bool textureDistortionGroup_visible = false;
 
         bool extra_tex_Group_active = false;
@@ -14,6 +14,8 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         bool dissolve_group_visible = false;
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
+        Material material = materialEditor.target as Material;
+
         #region Functions
         void DrawProperty(string property, string inspectorName)
         {
@@ -48,7 +50,6 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             else if (selected == 3) new_v4.w = 1;
             rawProperty.vectorValue = new_v4;
         }
-
         int Get_v4_index(string property)
         {
             var rawProperty = FindProperty(property, properties);
@@ -77,6 +78,30 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             EditorGUI.EndDisabledGroup();
         }
 
+        void FoldOut_keyword(string keyword, ref bool visible, string label, System.Action drawContent)
+        {
+            bool keyword_state = material.IsKeywordEnabled(keyword);
+
+            EditorGUILayout.BeginHorizontal();
+
+            bool new_keyword_state = EditorGUILayout.Toggle(keyword_state, GUILayout.Width(20));
+
+            if (new_keyword_state != keyword_state)
+            {
+                if(new_keyword_state == true)   material.EnableKeyword(keyword);
+                else                            material.DisableKeyword(keyword);
+            }
+            visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
+            EditorGUILayout.EndHorizontal();
+
+            EditorGUI.BeginDisabledGroup(!new_keyword_state);
+            if (visible)
+            {
+                drawContent();
+            }
+            EditorGUI.EndDisabledGroup();
+        }
+
         #endregion
 
 
@@ -90,8 +115,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         DrawProperty("_main_texture", "Texture");
 
 
-        //Texture distortion
-        FoldOut(ref textureDistortionGroup_active,ref textureDistortionGroup_visible, "Texture Distortion", textureDistortion_content);
+        FoldOut_keyword("_TEXTURE_DISTRORTION", ref textureDistortionGroup_visible, "Texture Distortion", textureDistortion_content);
         void textureDistortion_content()
         {
             DrawProperty_v3("_Fragment_scroll", "scroll speed");
@@ -118,8 +142,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
 
         // Dissolve
-        //Dissolve texture
-        FoldOut(ref dissolve_group_active, ref dissolve_group_visible, "Disolve", Disolve_content);
+               FoldOut(ref dissolve_group_active, ref dissolve_group_visible, "Disolve", Disolve_content);
         void Disolve_content()
         {
             string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
@@ -130,17 +153,20 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             DrawProperty("_detail_texture", "detail texture");
             DrawProperty("_detail_scroll_speed", "scroll");
             DrawProperty("_detail_influence", "detail amount");
-        }
-        //Dissolve settings
+            //Dissolve settings
 
             DrawProperty("_dissolve_master_opacity", "opacity");
             DrawProperty("_dissolve_effect", "Amountt");
             DrawProperty("_disolve_smoothness", "smoothness");
             DrawProperty("_Dissolve_border_size", "border size");
             DrawProperty("_Dissolve_border_Color", "border color");
+
+            
             DrawProperty("_Directional_Disolve", "directional dissolve");
+           // enable on checkmark should
             DrawProperty_v3("_Direction", "DIrection");
             DrawProperty("_Position", "position");
+        }
 
     }
 
