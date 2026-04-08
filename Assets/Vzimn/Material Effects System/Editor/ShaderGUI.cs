@@ -9,6 +9,9 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
         bool extra_tex_Group_active = false;
         bool extra_tex_visible = false;
+        
+        bool dissolve_group_active = false;
+        bool dissolve_group_visible = false;
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         #region Functions
@@ -89,7 +92,6 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
         //Texture distortion
         FoldOut(ref textureDistortionGroup_active,ref textureDistortionGroup_visible, "Texture Distortion", textureDistortion_content);
-
         void textureDistortion_content()
         {
             DrawProperty_v3("_Fragment_scroll", "scroll speed");
@@ -103,7 +105,6 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
         //Underlay texture
         FoldOut(ref extra_tex_Group_active, ref extra_tex_visible, "Underlay Texture", UnderlayTexture_content);
-
         void UnderlayTexture_content()
         {
             string[] spaceOptions_2tex = { "uv", "world", "local", "view" };
@@ -115,6 +116,31 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
         }
 
+
+        // Dissolve
+        //Dissolve texture
+        FoldOut(ref dissolve_group_active, ref dissolve_group_visible, "Disolve", Disolve_content);
+        void Disolve_content()
+        {
+            string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
+            v4_DropDown("_f_dis_space_UV_World_Local_View", "Space", spaceOptions_disolve);
+
+            DrawProperty("_dissolve_Texture", "texture");
+            DrawProperty("_dissolve_scroll_speed", "scroll");
+            DrawProperty("_detail_texture", "detail texture");
+            DrawProperty("_detail_scroll_speed", "scroll");
+            DrawProperty("_detail_influence", "detail amount");
+        }
+        //Dissolve settings
+
+            DrawProperty("_dissolve_master_opacity", "opacity");
+            DrawProperty("_dissolve_effect", "Amountt");
+            DrawProperty("_disolve_smoothness", "smoothness");
+            DrawProperty("_Dissolve_border_size", "border size");
+            DrawProperty("_Dissolve_border_Color", "border color");
+            DrawProperty("_Directional_Disolve", "directional dissolve");
+            DrawProperty_v3("_Direction", "DIrection");
+            DrawProperty("_Position", "position");
 
     }
 
