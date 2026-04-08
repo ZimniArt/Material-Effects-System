@@ -1,17 +1,17 @@
 using UnityEngine;
 using UnityEditor;
 using System.Web;
+using UnityEditor.SearchService;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
 
-        bool textureDistortionGroup_visible = false;
+        bool vis_MainTextureDistortion = false;
+        bool vis_UnderlayTexture = false;
+        bool vis_Disolve = false;
+        bool vis_dissolveTexture = false;
+        bool vis_dissolveControls = false;
 
-        bool extra_tex_Group_active = false;
-        bool extra_tex_visible = false;
-        
-        bool dissolve_group_active = false;
-        bool dissolve_group_visible = false;
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         Material material = materialEditor.target as Material;
@@ -77,6 +77,11 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             }
             EditorGUI.EndDisabledGroup();
         }
+        void Fold_simple(ref bool visible, string label, System.Action drawContent)
+        {
+            visible = EditorGUILayout.Foldout(visible, label);
+            if (visible) drawContent();
+        }
 
         void FoldOut_keyword(string keyword, ref bool visible, string label, System.Action drawContent)
         {
@@ -115,7 +120,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         DrawProperty("_main_texture", "Texture");
 
 
-        FoldOut_keyword("_TEXTURE_DISTRORTION", ref textureDistortionGroup_visible, "Texture Distortion", textureDistortion_content);
+        FoldOut_keyword("_TEXTURE_DISTRORTION", ref vis_MainTextureDistortion, "Texture Distortion", textureDistortion_content);
         void textureDistortion_content()
         {
             DrawProperty_v3("_Fragment_scroll", "scroll speed");
@@ -127,45 +132,55 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         }
 
 
-        //Underlay texture
-        FoldOut(ref extra_tex_Group_active, ref extra_tex_visible, "Underlay Texture", UnderlayTexture_content);
-        void UnderlayTexture_content()
-        {
-            string[] spaceOptions_2tex = { "uv", "world", "local", "view" };
-            v4_DropDown("_2tex_space_uv_world_local_view", "Space", spaceOptions_2tex);
-            int space_2tex = Get_v4_index("_2tex_space_uv_world_local_view");
-            if (space_2tex == 1 || space_2tex == 2) DrawProperty_v3("_2tex_dis_plane_XYZ", "Plane");
-            DrawProperty("_2tex_texture", "texture");
-            DrawProperty("_2tex_color_opacity", "Color and Opacity");
-            DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
-        }
+        FoldOut_keyword("_DISSOLVE", ref vis_Disolve, "Dissolve effect", dissolve_effect_content);
+        void dissolve_effect_content(){
+            EditorGUI.indentLevel = 3;
+            //Underlay texture
+            Fold_simple(ref vis_UnderlayTexture, "Underlay Texture", UnderlayTexture_content);
+            void UnderlayTexture_content()
+            {
+                string[] spaceOptions_2tex = { "uv", "world", "local", "view" };
+                v4_DropDown("_2tex_space_uv_world_local_view", "Space", spaceOptions_2tex);
+                int space_2tex = Get_v4_index("_2tex_space_uv_world_local_view");
+                if (space_2tex == 1 || space_2tex == 2) DrawProperty_v3("_2tex_dis_plane_XYZ", "Plane");
+                DrawProperty("_2tex_texture", "texture");
+                DrawProperty("_2tex_color_opacity", "Color and Opacity");
+                DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
+            }
 
 
-        // Dissolve
-               FoldOut(ref dissolve_group_active, ref dissolve_group_visible, "Disolve", Disolve_content);
-        void Disolve_content()
-        {
-            string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
-            v4_DropDown("_f_dis_space_UV_World_Local_View", "Space", spaceOptions_disolve);
+            // Dissolve
+            Fold_simple(ref vis_dissolveTexture, "Disolve texture", Disolve_content);
+            void Disolve_content()
+            {
+                string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
+                v4_DropDown("_f_dis_space_UV_World_Local_View", "Space", spaceOptions_disolve);
 
-            DrawProperty("_dissolve_Texture", "texture");
-            DrawProperty("_dissolve_scroll_speed", "scroll");
-            DrawProperty("_detail_texture", "detail texture");
-            DrawProperty("_detail_scroll_speed", "scroll");
-            DrawProperty("_detail_influence", "detail amount");
-            //Dissolve settings
+                DrawProperty("_dissolve_Texture", "texture");
+                DrawProperty("_dissolve_scroll_speed", "scroll");
+                DrawProperty("_detail_texture", "detail texture");
+                DrawProperty("_detail_scroll_speed", "scroll");
+                DrawProperty("_detail_influence", "detail amount");
+            }
+            Fold_simple(ref vis_dissolveControls, "Disolve Controls", Disolve_controls_content);
+            void Disolve_controls_content()
+            {
+                //Dissolve settings
+                DrawProperty("_dissolve_master_opacity", "opacity");
+                DrawProperty("_dissolve_effect", "Amountt");
+                DrawProperty("_disolve_smoothness", "smoothness");
+                DrawProperty("_Dissolve_border_size", "border size");
+                DrawProperty("_Dissolve_border_Color", "border color");
 
-            DrawProperty("_dissolve_master_opacity", "opacity");
-            DrawProperty("_dissolve_effect", "Amountt");
-            DrawProperty("_disolve_smoothness", "smoothness");
-            DrawProperty("_Dissolve_border_size", "border size");
-            DrawProperty("_Dissolve_border_Color", "border color");
 
+                DrawProperty("_Directional_Disolve", "directional dissolve");
+                float directionalDissolve = FindProperty("_Directional_Disolve",properties).floatValue;
+                if (directionalDissolve > 0.5) { 
+                    DrawProperty_v3("_Direction", "DIrection");
+                    DrawProperty("_Position", "position"); 
+                }
+            }
             
-            DrawProperty("_Directional_Disolve", "directional dissolve");
-           // enable on checkmark should
-            DrawProperty_v3("_Direction", "DIrection");
-            DrawProperty("_Position", "position");
         }
 
     }
