@@ -12,7 +12,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
     //not tied to keywords
     bool vis_dissolveTexture = SessionState.GetBool(nameof(vis_dissolveTexture), false);
-    bool vis_dissolveControls = SessionState.GetBool(nameof(vis_dissolveControls), false);
+    bool vis_dissolveBorder = SessionState.GetBool(nameof(vis_dissolveBorder), false);
     bool vis_vertexDistrotion = SessionState.GetBool(nameof(vis_vertexDistrotion), false);
 
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
@@ -141,6 +141,18 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         void dissolve_effect_content()
         {
             EditorGUI.indentLevel = 3;
+            
+            DrawProperty("_dissolve_master_opacity", "opacity");
+            DrawProperty("_dissolve_effect", "Amountt");
+
+            DrawProperty("_Directional_Disolve", "directional dissolve");
+            float directionalDissolve = FindProperty("_Directional_Disolve", properties).floatValue;
+            if (directionalDissolve > 0.5)
+            {
+                DrawProperty_v3("_Direction", "DIrection");
+                DrawProperty("_Position", "position");
+            }
+            
             Fold_simple(ref vis_UnderlayTexture,nameof(vis_UnderlayTexture), "Underlay Texture", UnderlayTexture_content);
             void UnderlayTexture_content()
             {
@@ -156,8 +168,11 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             Fold_simple(ref vis_dissolveTexture, nameof(vis_dissolveTexture), "Disolve texture", Disolve_content);
             void Disolve_content()
             {
+
                 string[] spaceOptions_disolve = { "uv", "world", "local", "view" };
                 v4_DropDown("_f_dis_space_UV_World_Local_View", "Space", spaceOptions_disolve);
+                int space_2tex = Get_v4_index("_f_dis_space_UV_World_Local_View");
+                if (space_2tex == 1 || space_2tex == 2) DrawProperty_v3("_dis_plane_XYZ", "Plane");
 
                 DrawProperty("_dissolve_Texture", "texture");
                 DrawProperty("_dissolve_scroll_speed", "scroll");
@@ -166,23 +181,14 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 DrawProperty("_detail_influence", "detail amount");
             }
 
-            Fold_simple(ref vis_dissolveControls,nameof(vis_dissolveControls), "Disolve Controls", Disolve_controls_content);
-            void Disolve_controls_content()
+            Fold_simple(ref vis_dissolveBorder, nameof(vis_dissolveBorder), "Border", dissolveBorder_content);
+            void dissolveBorder_content()
             {
-                DrawProperty("_dissolve_master_opacity", "opacity");
-                DrawProperty("_dissolve_effect", "Amountt");
                 DrawProperty("_disolve_smoothness", "smoothness");
                 DrawProperty("_Dissolve_border_size", "border size");
                 DrawProperty("_Dissolve_border_Color", "border color");
 
 
-                DrawProperty("_Directional_Disolve", "directional dissolve");
-                float directionalDissolve = FindProperty("_Directional_Disolve", properties).floatValue;
-                if (directionalDissolve > 0.5)
-                {
-                    DrawProperty_v3("_Direction", "DIrection");
-                    DrawProperty("_Position", "position");
-                }
             }
             EditorGUI.indentLevel =0;
 

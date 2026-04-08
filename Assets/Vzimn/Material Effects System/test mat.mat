@@ -12,7 +12,8 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _DISSOLVE
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -214,7 +215,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture:
-        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
+        m_Texture: {fileID: 2800000, guid: 7da7988fd216e484d8afc7dd5191203b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture_1:
@@ -273,7 +274,7 @@ Material:
     - _Directional_dissolve: 0
     - _Disolve_map_scale: 2.57
     - _Disolve_postion: 1.34
-    - _Dissolve_border_size: 0.137
+    - _Dissolve_border_size: 0.017
     - _Distortio_speed: 0.25
     - _Distortion_amount: 0
     - _Distortion_power: 0.03
@@ -308,7 +309,7 @@ Material:
     - _PingPong: 1
     - _Planar_projection: 1
     - _Plane_planar_projection: 0
-    - _Position: -0.33
+    - _Position: -0.21
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
@@ -335,13 +336,13 @@ Material:
     - _Vav: 0
     - _Vertex_color_affect: 0
     - _WorkflowMode: 1
-    - _World_direction: 0
+    - _World_direction: 1
     - _ZWrite: 1
     - _amount: 0
     - _contrast: 15.81
-    - _disolve_smoothness: 0.084
-    - _dissolve_effect: 0.317
-    - _dissolve_master_opacity: 0.919
+    - _disolve_smoothness: 0.2
+    - _dissolve_effect: 0.29
+    - _dissolve_master_opacity: 1
     - _dissolve_opacity: 1
     - _flat_world_position: 1
     - _frag_dis_Amount: 0
@@ -351,20 +352,20 @@ Material:
     - _frag_dis_smoothness: 0.08
     - _invert: 0
     - _multiplier: 92.04
-    - _position: 0.166
+    - _position: 0.675
     - _power: -3.6
     - _projection: 0
     - _sharpness: 0
     - _size: 0.443
     - _smoothnes: 0.16
-    - _softness: 0.209
+    - _softness: 0.286
     - _triplanar_is_worldSpace: 1
     - _wave_power: 0
     - _world_local: 1
     - _world_position: 1
     m_Colors:
     - _2D_texture_Scroll_speed: {r: 0, g: 0.14, b: 0, a: 0}
-    - _2tex_color_opacity: {r: 1, g: 1, b: 1, a: 1}
+    - _2tex_color_opacity: {r: 1, g: 1, b: 1, a: 0}
     - _2tex_dis_plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
     - _2tex_space_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _Active_PLANE_XYZ: {r: 1, g: 0, b: 0, a: 0}
@@ -373,7 +374,7 @@ Material:
     - _Base_color: {r: 1, g: 1, b: 1, a: 0.972549}
     - _Blend_contrast_black_white: {r: 0, g: 1, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
-    - _Direction: {r: 1, g: 0, b: 0, a: 0}
+    - _Direction: {r: 0, g: 1, b: 0, a: 0}
     - _Direction_1: {r: 0, g: 0, b: 0, a: 0}
     - _Dissolve_border_Color: {r: 1, g: 0.8915094, b: 0.8915094, a: 1}
     - _Dissolve_color: {r: 1, g: 0, b: 0.60188293, a: 0}
@@ -390,7 +391,7 @@ Material:
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
     - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _Glow_color: {r: 1, g: 0, b: 0, a: 0}
-    - _Glow_color_opacity: {r: 0, g: 0, b: 0, a: 1}
+    - _Glow_color_opacity: {r: 1, g: 0, b: 0, a: 1}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
     - _Noise_maps_influence: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _Noise_move_speed: {r: 0, g: 0, b: 0, a: 0}
@@ -417,12 +418,13 @@ Material:
     - _belnd_tint: {r: 1, g: 0, b: 0.28263664, a: 1}
     - _detail_influence: {r: 0, g: 0, b: 1, a: 0}
     - _detail_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _dis_plane_XYZ: {r: 0, g: 2.41, b: 0, a: 0}
     - _dissolve_detail_amount: {r: 10, g: 10, b: 0, a: 0}
     - _dissolve_detail_scroll_speed: {r: 0, g: -0.01, b: 0, a: 0}
     - _dissolve_main_amount: {r: 1, g: 0, b: 0, a: 0}
     - _dissolve_main_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _dissolve_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _f_dis_space_UV_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
+    - _f_dis_space_UV_World_Local_View: {r: 0, g: 0, b: 0, a: 1}
     - _frag_dis_plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
