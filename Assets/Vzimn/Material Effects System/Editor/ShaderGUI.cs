@@ -5,14 +5,15 @@ using UnityEditor.SearchService;
 
 public class ShaderGUI : UnityEditor.ShaderGUI
 {
+    bool vis_MainTextureDistortion = SessionState.GetBool(nameof(vis_MainTextureDistortion), false);
+    bool vis_UnderlayTexture = SessionState.GetBool(nameof(vis_UnderlayTexture), false);
+    bool vis_Disolve = SessionState.GetBool(nameof(vis_Disolve), false);
+    bool vis_glow = SessionState.GetBool(nameof(vis_glow), false);
 
-    bool vis_MainTextureDistortion = false;
-    bool vis_UnderlayTexture = false;
-    bool vis_Disolve = false;
+    //not tied to keywords
     bool vis_dissolveTexture = false;
     bool vis_dissolveControls = false;
     bool vis_vertexDistrotion = false;
-    bool vis_glow = false;
 
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
@@ -65,27 +66,14 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             return index;
         }
 
-        void FoldOut(ref bool active, ref bool visible, string label, System.Action drawContent)
-        {
-            EditorGUILayout.BeginHorizontal();
-            active = EditorGUILayout.Toggle(active, GUILayout.Width(20));
-            visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
-            EditorGUILayout.EndHorizontal();
-
-            EditorGUI.BeginDisabledGroup(!active);
-            if (visible)
-            {
-                drawContent();
-            }
-            EditorGUI.EndDisabledGroup();
-        }
+        
         void Fold_simple(ref bool visible, string label, System.Action drawContent)
         {
             visible = EditorGUILayout.Foldout(visible, label);
             if (visible) drawContent();
         }
 
-        void FoldOut_keyword(string keyword, ref bool visible, string label, System.Action drawContent)
+        void FoldOut_keyword(string keyword, ref bool visible,string visible_name, string label, System.Action drawContent)
         {
             bool keyword_state = material.IsKeywordEnabled(keyword);
 
@@ -98,13 +86,20 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 if (new_keyword_state == true) material.EnableKeyword(keyword);
                 else material.DisableKeyword(keyword);
             }
+            visible = SessionState.GetBool(visible_name, visible);
             visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
             EditorGUILayout.EndHorizontal();
 
             EditorGUI.BeginDisabledGroup(!new_keyword_state);
             if (visible)
             {
+                SessionState.SetBool(visible_name, true);
                 drawContent();
+            }
+            else
+            {
+                SessionState.SetBool(visible_name, false);
+
             }
             EditorGUI.EndDisabledGroup();
         }
@@ -122,7 +117,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         DrawProperty("_main_texture", "Texture");
 
 
-        FoldOut_keyword("_TEXTURE_DISTRORTION", ref vis_MainTextureDistortion, "Texture Distortion", textureDistortion_content);
+        FoldOut_keyword("_TEXTURE_DISTRORTION", ref vis_MainTextureDistortion,nameof(vis_MainTextureDistortion), "Texture Distortion", textureDistortion_content);
         void textureDistortion_content()
         {
             DrawProperty_v3("_Fragment_scroll", "scroll speed");
@@ -134,7 +129,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         }
 
 
-        FoldOut_keyword("_DISSOLVE", ref vis_Disolve, "Dissolve effect", dissolve_effect_content);
+        FoldOut_keyword("_DISSOLVE", ref vis_Disolve,nameof(vis_Disolve), "Dissolve effect", dissolve_effect_content);
         void dissolve_effect_content()
         {
             EditorGUI.indentLevel = 3;
@@ -186,7 +181,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
             }
 
         }
-        FoldOut_keyword("_VERTEX_DISTORTION", ref vis_vertexDistrotion, "Shape Distortion", vertexDistortion_content);
+        FoldOut_keyword("_VERTEX_DISTORTION", ref vis_vertexDistrotion,nameof(vis_vertexDistrotion), "Shape Distortion", vertexDistortion_content);
 
         void vertexDistortion_content()
         {
@@ -217,7 +212,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
         }
 
-        FoldOut_keyword("_GLOW", ref vis_glow, "Glow", glow_content);
+        FoldOut_keyword("_GLOW", ref vis_glow,nameof(vis_glow), "Glow", glow_content);
 
         void glow_content()
         {

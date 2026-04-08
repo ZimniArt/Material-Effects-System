@@ -703,7 +703,11 @@
             "m_Id": "9e0f718692dc46b79d8433404b807f82"
         }
     ],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "285c159f46ff413786054e018bbabc48"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -5677,6 +5681,26 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "285c159f46ff413786054e018bbabc48",
+    "m_Title": "Problem!",
+    "m_Content": "Probably missed normal direction, so in uv displacement is wrong",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 6772.4560546875,
+        "y": -1204.5330810546875,
+        "width": 200.0,
+        "height": 160.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector4MaterialSlot",
     "m_ObjectId": "28d72a1195d3430aa6131d0f99a5dc51",
     "m_Id": 1,
@@ -10305,8 +10329,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5052.99951171875,
-            "y": -1239.9998779296875,
+            "x": 5058.0,
+            "y": -1429.0001220703125,
             "width": 159.0,
             "height": 34.0
         }
@@ -10409,8 +10433,8 @@
     "m_ObjectId": "7df7da4774fd4ced8230b505d318de98",
     "m_Title": "Vertex_addition_and_space_correction",
     "m_Position": {
-        "x": 4991.0,
-        "y": -1475.0
+        "x": 4986.0,
+        "y": -1488.0
     }
 }
 
@@ -10565,10 +10589,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5502.99951171875,
-            "y": -1221.9998779296875,
-            "width": 208.0,
-            "height": 301.99993896484377
+            "x": 5503.0,
+            "y": -1108.0,
+            "width": 130.0,
+            "height": 118.0
         }
     },
     "m_Slots": [
@@ -10588,7 +10612,7 @@
         "plus"
     ],
     "m_Precision": 0,
-    "m_PreviewExpanded": true,
+    "m_PreviewExpanded": false,
     "m_DismissedVersion": 0,
     "m_PreviewMode": 0,
     "m_CustomColors": {
@@ -11615,10 +11639,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5275.99951171875,
-            "y": -1221.9998779296875,
+            "x": 5276.0,
+            "y": -1327.0,
             "width": 172.0,
-            "height": 142.0
+            "height": 141.9998779296875
         }
     },
     "m_Slots": [
@@ -13726,8 +13750,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5015.99951171875,
-            "y": -1190.9998779296875,
+            "x": 5011.0,
+            "y": -1368.0001220703125,
             "width": 206.0,
             "height": 130.0
         }
@@ -16164,8 +16188,8 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5784.99951171875,
-            "y": -1362.9998779296875,
+            "x": 5746.0,
+            "y": -1361.0001220703125,
             "width": 213.0,
             "height": 155.0
         }
@@ -16462,10 +16486,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 5015.99951171875,
-            "y": -1044.9998779296875,
+            "x": 5011.0,
+            "y": -1238.0001220703125,
             "width": 206.0,
-            "height": 130.0
+            "height": 130.0001220703125
         }
     },
     "m_Slots": [

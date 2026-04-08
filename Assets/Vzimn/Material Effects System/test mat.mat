@@ -12,7 +12,8 @@ Material:
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _TEXTURE_DISTRORTION
   m_InvalidKeywords:
   - _ENUM_A
   - _ENUM__UNLIT
@@ -388,7 +389,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _Emission_Color: {r: 1, g: 0, b: 0, a: 0}
     - _Experiments: {r: 2.92, g: 1.31, b: -0.42, a: 0}
-    - _Fragment_scroll: {r: 0.7, g: 0, b: 0, a: 0}
+    - _Fragment_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _Glow_color: {r: 1, g: 0, b: 0, a: 0}
     - _Glow_color_opacity: {r: 0, g: 0, b: 0, a: 1}
     - _Lit_color: {r: 0.31248856, g: 1, b: 0, a: 0}
@@ -428,8 +429,8 @@ Material:
     - _frag_dis_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
     - _frag_dist_detail_amount: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dist_detail_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _frag_dist_noise_amount: {r: 0, g: 0.1, b: 0, a: 0}
-    - _frag_dist_noise_scroll: {r: 0, g: 0, b: 0, a: 0}
+    - _frag_dist_noise_amount: {r: 0, g: -0.18, b: 0, a: 0}
+    - _frag_dist_noise_scroll: {r: 0, g: 0.06, b: 0, a: 0}
     - _frag_plane_XYZ: {r: 0.7, g: 1, b: 0, a: 0}
     - _frag_tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _frag_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
@@ -440,9 +441,9 @@ Material:
     - _tint_color: {r: 1, g: 1, b: 1, a: 1}
     - _underlay_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _vert_Plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
-    - _vert_dist_Noise_amount: {r: 0, g: 0.7, b: 0, a: 0}
+    - _vert_dist_Noise_amount: {r: 0, g: 1.52, b: 0, a: 0}
     - _vert_dist_Noise_scroll: {r: 0, g: 0, b: 0, a: 0}
-    - _vert_dist_details_amount: {r: 0, g: 3.39, b: 0, a: 0}
+    - _vert_dist_details_amount: {r: 0, g: 0, b: 0, a: 0}
     - _vert_dist_details_scroll: {r: 0, g: 0, b: 0, a: 0}
     - _vert_uv_world_local: {r: 0, g: 0, b: 0, a: 0}
     - _vert_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
