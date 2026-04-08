@@ -133,7 +133,6 @@ public class ShaderGUI : UnityEditor.ShaderGUI
         void dissolve_effect_content()
         {
             EditorGUI.indentLevel = 3;
-            //Underlay texture
             Fold_simple(ref vis_UnderlayTexture, "Underlay Texture", UnderlayTexture_content);
             void UnderlayTexture_content()
             {
@@ -146,8 +145,6 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 DrawProperty_v3("_underlay_scroll_speed", "Scroll speed");
             }
 
-
-            // Dissolve
             Fold_simple(ref vis_dissolveTexture, "Disolve texture", Disolve_content);
             void Disolve_content()
             {
@@ -160,10 +157,10 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                 DrawProperty("_detail_scroll_speed", "scroll");
                 DrawProperty("_detail_influence", "detail amount");
             }
+
             Fold_simple(ref vis_dissolveControls, "Disolve Controls", Disolve_controls_content);
             void Disolve_controls_content()
             {
-                //Dissolve settings
                 DrawProperty("_dissolve_master_opacity", "opacity");
                 DrawProperty("_dissolve_effect", "Amountt");
                 DrawProperty("_disolve_smoothness", "smoothness");
@@ -179,8 +176,10 @@ public class ShaderGUI : UnityEditor.ShaderGUI
                     DrawProperty("_Position", "position");
                 }
             }
+            EditorGUI.indentLevel =0;
 
         }
+
         FoldOut_keyword("_VERTEX_DISTORTION", ref vis_vertexDistrotion,nameof(vis_vertexDistrotion), "Shape Distortion", vertexDistortion_content);
 
         void vertexDistortion_content()
