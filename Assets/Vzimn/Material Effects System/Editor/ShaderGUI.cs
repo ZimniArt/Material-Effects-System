@@ -15,6 +15,7 @@ public class ShaderGUI : UnityEditor.ShaderGUI
     bool vis_dissolveBorder = SessionState.GetBool(nameof(vis_dissolveBorder), false);
     bool vis_vertexDistrotion = SessionState.GetBool(nameof(vis_vertexDistrotion), false);
 
+
     public override void OnGUI(MaterialEditor materialEditor, MaterialProperty[] properties)
     {
         Material material = materialEditor.target as Material;
@@ -83,17 +84,32 @@ public class ShaderGUI : UnityEditor.ShaderGUI
 
         void FoldOut_keyword(string keyword, ref bool visible,string visible_name, string label, System.Action drawContent)
         {
-            bool keyword_state = material.IsKeywordEnabled(keyword);
+            bool keyword_state = false;
 
+            var keyword_var = FindProperty(keyword, properties);// seems to be a float
+            if(keyword_var.floatValue > 0.5f)
+            {
+                keyword_state = true;
+            }
+            else
+            {
+                keyword_state = false;
+            }
             EditorGUILayout.BeginHorizontal();
 
             bool new_keyword_state = EditorGUILayout.Toggle(keyword_state, GUILayout.Width(20));
-
-            if (new_keyword_state != keyword_state)
+         
+            if (new_keyword_state == true)
             {
-                if (new_keyword_state == true) material.EnableKeyword(keyword);
-                else material.DisableKeyword(keyword);
+                keyword_var.floatValue = 1.0f;
+                material.EnableKeyword(keyword);
             }
+            else
+            {
+                keyword_var.floatValue = 0.0f;
+                material.DisableKeyword(keyword);
+            }
+            
             visible = SessionState.GetBool(visible_name, visible);
             visible = GUILayout.Toggle(visible, label, EditorStyles.foldoutHeader);
             EditorGUILayout.EndHorizontal();

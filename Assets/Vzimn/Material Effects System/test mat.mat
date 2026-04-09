@@ -171,7 +171,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _detail_texture:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0bbd9bd4b5e1e15478b2a2c4db45f5c1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _dissolve_Texture:
@@ -215,7 +215,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture:
-        m_Texture: {fileID: 2800000, guid: 7da7988fd216e484d8afc7dd5191203b, type: 3}
+        m_Texture: {fileID: 2800000, guid: e1250810ccb92f740af807d9670b60bf, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _main_texture_1:
@@ -266,7 +266,7 @@ Material:
     - _Contrast: -0.43
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DISSOLVE: 0
+    - _DISSOLVE: 1
     - _DIstorion_power: 0.1
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
@@ -341,7 +341,7 @@ Material:
     - _amount: 0
     - _contrast: 15.81
     - _disolve_smoothness: 0.2
-    - _dissolve_effect: 0.29
+    - _dissolve_effect: 0.401
     - _dissolve_master_opacity: 1
     - _dissolve_opacity: 1
     - _flat_world_position: 1
@@ -416,15 +416,15 @@ Material:
     - _Vertex_distortion_color: {r: 0, g: 0.6789739, b: 1, a: 1}
     - _Wave_Speed: {r: 0, g: 0, b: 0, a: 0}
     - _belnd_tint: {r: 1, g: 0, b: 0.28263664, a: 1}
-    - _detail_influence: {r: 0, g: 0, b: 1, a: 0}
-    - _detail_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
+    - _detail_influence: {r: 1, g: 1, b: 1, a: 0}
+    - _detail_scroll_speed: {r: 0.43, g: 0, b: 0, a: 0}
     - _dis_plane_XYZ: {r: 0, g: 2.41, b: 0, a: 0}
     - _dissolve_detail_amount: {r: 10, g: 10, b: 0, a: 0}
     - _dissolve_detail_scroll_speed: {r: 0, g: -0.01, b: 0, a: 0}
     - _dissolve_main_amount: {r: 1, g: 0, b: 0, a: 0}
     - _dissolve_main_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _dissolve_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
-    - _f_dis_space_UV_World_Local_View: {r: 0, g: 0, b: 0, a: 1}
+    - _f_dis_space_UV_World_Local_View: {r: 1, g: 0, b: 0, a: 0}
     - _frag_dis_plane_XYZ: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_scroll_speed: {r: 0, g: 0, b: 0, a: 0}
     - _frag_dis_uv_world_local_view: {r: 1, g: 0, b: 0, a: 0}
